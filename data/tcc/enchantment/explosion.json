@@ -1,0 +1,73 @@
+{
+    "anvil_cost": 8,
+    "description": {
+      "translate": "enchantment.tcc.explosion",
+      "fallback":"妈的跟你爆了"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.25,
+            "per_level_above_first": 0.15
+          },
+          "attribute": "minecraft:generic.explosion_knockback_resistance",
+          "id": "enchantment.explosion",
+          "operation": "add_value"
+        }
+      ],
+      "minecraft:post_attack": [
+        {
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:explode",
+            "block_interaction": "trigger",
+            "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+            "knockback_multiplier": {
+              "type": "minecraft:linear",
+              "base": 0.5,
+              "per_level_above_first": 0.25
+            },
+            "large_particle": {
+              "type": "minecraft:explosion_emitter"
+            },
+            "radius": 2.0,
+            "small_particle": {
+              "type": "minecraft:gust_emitter_small"
+            },
+            "sound": "minecraft:entity.generic.explode",
+            "damage_type":"minecraft:player_explosion"
+          },
+          "enchanted": "victim",
+          "requirements": {
+            "chance": {
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0.15,
+                "per_level_above_first": 0.05
+              }
+            },
+            "condition": "minecraft:random_chance"
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 60,
+      "per_level_above_first": 20
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 20
+    },
+    "primary_items": "#minecraft:enchantable/chest_armor",
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "exclusive_set": "#tcc:exclusive_set/blast_protection"
+  }

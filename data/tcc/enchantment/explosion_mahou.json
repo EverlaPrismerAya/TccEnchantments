@@ -1,0 +1,62 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.tcc.explosion_mahou",
+    "fallback":"爆裂魔法"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:explode",
+          "block_interaction": "trigger",
+          "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+          "knockback_multiplier": {
+            "type": "minecraft:linear",
+            "base": 1.0,
+            "per_level_above_first": 0.25
+          },
+          "large_particle": {
+            "type": "minecraft:explosion"
+          },
+          "offset":[0,0.65,0],
+          "radius": 1.5,
+          "small_particle": {
+            "type": "minecraft:explosion"
+          },
+          "sound": "minecraft:entity.generic.explode",
+          "damage_type":"minecraft:player_explosion"
+        },
+        "enchanted": "attacker"
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:damage_item",
+          "amount": 5
+        },
+        "requirements": {
+          "chance": 0.5,
+          "condition": "minecraft:random_chance"
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#tcc:exclusive_set/explosion_mahou",
+  "supported_items": "#minecraft:enchantable/explosion_mahou",
+  "weight": 2
+}

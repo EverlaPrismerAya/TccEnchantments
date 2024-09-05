@@ -1,0 +1,37 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.clever",
+    "fallback": "劈砍"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          },
+        "attribute": "minecraft:generic.attack_damage",
+        "id": "enchantment.clever_atk_dmg",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "exclusive_set": "#minecraft:exclusive_set/damage",
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "primary_items": "#minecraft:enchantable/axe",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/clever_weapon",
+  "weight": 10
+}

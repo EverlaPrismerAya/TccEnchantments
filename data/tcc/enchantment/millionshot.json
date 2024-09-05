@@ -1,0 +1,56 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.millionshot",
+      "fallback":"万箭齐发"
+    },
+    "effects": {
+      "minecraft:crossbow_charge_time": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": 1,
+          "per_level_above_first": 0.0
+        }
+      },
+      "minecraft:projectile_count": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 288.0,
+              "per_level_above_first": 100.0
+            }
+          }
+        }
+      ],
+      "minecraft:projectile_spread": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 30.0,
+              "per_level_above_first": 10.0
+            }
+          }
+        }
+      ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/millionshot",
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "weight": 2
+  }

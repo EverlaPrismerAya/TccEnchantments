@@ -1,0 +1,82 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.tcc.aqua_aspect",
+    "fallback":"水之呼吸"
+  },
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:set_block_properties",
+              "properties": {
+                "lit": "false"
+              }
+            },
+            {
+              "type": "minecraft:damage_item",
+              "amount": 1.0
+            }
+          ]
+        },
+        "requirements": {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "block": {
+              "state": {
+                "lit": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "tcc:remove_fire"
+          },
+        "enchanted": "attacker"
+      }
+    ],
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 2.5,
+            "per_level_above_first": 2.5
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#tcc:sensitive_to_aqua_aspect"
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 2,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#tcc:exclusive_set/fire_aspect",
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 2
+}

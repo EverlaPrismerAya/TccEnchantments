@@ -1,0 +1,36 @@
+{
+    "anvil_cost": 8,
+    "description": {
+      "translate": "enchantment.tcc.escaper",
+      "fallback":"逃逸大蛇"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.15,
+            "per_level_above_first": 0.08
+          },
+          "attribute": "minecraft:generic.movement_speed",
+          "id": "enchantment.escaper",
+          "operation": "add_multiplied_base"
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 10
+    },
+    "max_level": 3,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "feet"
+    ],
+    "exclusive_set": "#tcc:exclusive_set/soul_speed",
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "weight": 1
+  }

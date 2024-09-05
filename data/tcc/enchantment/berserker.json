@@ -1,0 +1,66 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.berserker",
+      "fallback":"狂战士"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.10,
+            "per_level_above_first": 0.05
+          },
+          "attribute": "minecraft:generic.attack_damage",
+          "id": "enchantment.berserker.dmg",
+          "operation": "add_multiplied_base"
+        },
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.20,
+            "per_level_above_first": 0.1
+          },
+          "attribute": "minecraft:generic.attack_speed",
+          "id": "enchantment.berserker.atkspeed",
+          "operation": "add_multiplied_base"
+        },
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 0.10,
+            "per_level_above_first": 0.05
+          },
+          "attribute": "minecraft:generic.movement_speed",
+          "id": "enchantment.berserker.speed",
+          "operation": "add_multiplied_base"
+        },
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": -0.15,
+            "per_level_above_first": -0.08
+          },
+          "attribute": "minecraft:generic.armor",
+          "id": "enchantment.berserker.armor",
+          "operation": "add_multiplied_base"
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 18,
+      "per_level_above_first": 8
+    },
+    "max_level": 4,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "armor"
+    ],
+    "exclusive_set": "#minecraft:exclusive_set/armor",
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 2
+  }

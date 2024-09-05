@@ -1,0 +1,74 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.cryo_inject",
+      "fallback":"冰矢"
+    },
+    "effects": {
+        "minecraft:post_attack": [
+          {
+            "affected": "victim",
+            "effect": {
+              "type": "minecraft:apply_mob_effect",
+              "max_amplifier": 2.0,
+              "max_duration": {
+                "type": "minecraft:linear",
+                "base": 10,
+                "per_level_above_first": 5
+              },
+              "min_amplifier": 0.0,
+              "min_duration": 10,
+              "to_apply": "minecraft:slowness"
+            },
+            "enchanted": "attacker"
+          },
+          {
+            "affected": "victim",
+            "effect": {
+              "type": "minecraft:apply_mob_effect",
+              "max_amplifier": 1.0,
+              "max_duration": {
+                "type": "minecraft:linear",
+                "base": 5,
+                "per_level_above_first": 2
+              },
+              "min_amplifier": 0.0,
+              "min_duration": 10,
+              "to_apply": "minecraft:mining_fatigue"
+            },
+            "enchanted": "attacker"
+          },
+          {
+            "affected": "victim",
+            "effect": {
+              "type": "minecraft:apply_mob_effect",
+              "max_amplifier": 0.0,
+              "max_duration": {
+                "type": "minecraft:linear",
+                "base": 5,
+                "per_level_above_first": 2
+              },
+              "min_amplifier": 0.0,
+              "min_duration": 10,
+              "to_apply": "minecraft:weakness"
+            },
+            "enchanted": "attacker"
+          }
+        ]
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 2,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/bow",
+    "exclusive_set": "#tcc:exclusive_set/flame",
+    "weight": 2
+  }

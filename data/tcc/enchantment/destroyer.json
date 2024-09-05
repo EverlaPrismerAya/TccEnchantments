@@ -1,0 +1,38 @@
+{
+    "anvil_cost": 3,
+    "description": {
+      "translate": "enchantment.tcc.destroyer",
+      "fallback":"世界毁灭者"
+    },
+    "effects": {
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:run_function",
+            "function": "tcc:set_air"
+          }
+        },
+        {
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 51,
+      "per_level_above_first": 10
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "exclusive_set": "#tcc:exclusive_set/silk_touch",
+    "supported_items": "#minecraft:enchantable/mining",
+    "weight": 2
+  }

@@ -1,0 +1,46 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.self_flame",
+      "fallback":"玩火自焚"
+    },
+    "effects": {
+        "minecraft:post_attack": [
+            {
+              "affected": "attacker",
+              "effect": {
+                "type": "minecraft:ignite",
+                "duration": {
+                  "type": "minecraft:linear",
+                  "base": 8.0,
+                  "per_level_above_first": 4.0
+                }
+              },
+              "enchanted": "attacker"
+            }
+        ],
+        "minecraft:projectile_spawned": [
+            {
+              "effect": {
+                "type": "minecraft:ignite",
+                "duration": 100.0
+              }
+            }
+        ]
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/bow",
+    "exclusive_set": "#tcc:exclusive_set/flame",
+    "weight": 2
+  }

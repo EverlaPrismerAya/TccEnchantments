@@ -1,0 +1,36 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.reach",
+      "fallback":"瑞驰"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 1.0,
+            "per_level_above_first": 0.5
+          },
+          "attribute": "minecraft:player.entity_interaction_range",
+          "id": "enchantment.reach_increase",
+          "operation": "add_value"
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 55,
+      "per_level_above_first": 20
+    },
+    "max_level": 2,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 20
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/sword",
+    "exclusive_set": "#tcc:exclusive_set/knockback",
+    "weight": 3
+  }

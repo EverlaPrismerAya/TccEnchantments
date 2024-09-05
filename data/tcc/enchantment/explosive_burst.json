@@ -1,0 +1,63 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.explosive_burst",
+      "fallback":"疯爆"
+    },
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "affected": "attacker",
+          "effect": {
+            "type": "minecraft:explode",
+            "block_interaction": "trigger",
+            "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+            "knockback_multiplier": {
+              "type": "minecraft:linear",
+              "base": 0.5,
+              "per_level_above_first": 0.25
+            },
+            "large_particle": {
+              "type": "minecraft:explosion_emitter"
+            },
+            "radius": 2.5,
+            "small_particle": {
+              "type": "minecraft:gust_emitter_small"
+            },
+            "sound": "minecraft:entity.generic.explode",
+            "damage_type":"minecraft:player_explosion"
+          },
+          "enchanted": "attacker",
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "attacker",
+            "predicate": {
+              "flags": {
+                "is_flying": false
+              },
+              "movement": {
+                "fall_distance": {
+                  "min": 1.5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 65,
+      "per_level_above_first": 9
+    },
+    "max_level": 3,
+    "min_cost": {
+      "base": 15,
+      "per_level_above_first": 9
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/mace",
+    "exclusive_set": "#tcc:exclusive_set/wind_burst",
+    "weight": 2
+  }

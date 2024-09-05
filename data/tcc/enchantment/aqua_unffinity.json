@@ -1,0 +1,36 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.tcc.aqua_unffinity",
+    "fallback":"水下慢撅"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -1.0,
+          "per_level_above_first": -1.0
+        },
+        "attribute": "minecraft:player.submerged_mining_speed",
+        "id": "enchantment.aqua_unffinity",
+        "operation": "add_multiplied_total"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 41,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "exclusive_set": "#tcc:exclusive_set/aqua_affinity",
+  "weight": 1
+}

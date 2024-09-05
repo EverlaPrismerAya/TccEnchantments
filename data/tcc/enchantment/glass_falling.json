@@ -1,0 +1,46 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.glass_falling",
+      "fallback":"摔落骨折"
+    },
+    "effects": {
+        "minecraft:attributes": [
+            {
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 1.0,
+                "per_level_above_first": 0.5
+              },
+              "attribute": "minecraft:generic.fall_damage_multiplier",
+              "id": "enchantment.glass_falling",
+              "operation": "add_value"
+            },
+            {
+              "amount": {
+                "type": "minecraft:linear",
+                "base": -1.0,
+                "per_level_above_first": -0.5
+              },
+              "attribute": "minecraft:generic.safe_fall_distance",
+              "id": "enchantment.glass_falling_dist",
+              "operation": "add_value"
+            }
+          ]
+    },
+    "max_cost": {
+      "base": 11,
+      "per_level_above_first": 6
+    },
+    "max_level": 4,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 6
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/foot_armor",
+    "weight": 2,
+    "exclusive_set": "#tcc:exclusive_set/feather_falling"
+  }

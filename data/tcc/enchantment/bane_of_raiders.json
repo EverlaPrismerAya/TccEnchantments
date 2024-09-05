@@ -1,0 +1,44 @@
+{
+    "anvil_cost": 2,
+    "description": {
+        "translate": "enchantment.tcc.bane_of_raiders",
+        "fallback": "劫掠杀手"
+    },
+    "effects": {
+      "minecraft:damage": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 2.5,
+              "per_level_above_first": 2.5
+            }
+          },
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#tcc:sensitive_to_bane_of_raiders"
+            }
+          }
+        }
+      ]
+    },
+    "exclusive_set": "#minecraft:exclusive_set/damage",
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 8
+    },
+    "max_level": 5,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "primary_items": "#minecraft:enchantable/sword",
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/weapon",
+    "weight": 5
+  }

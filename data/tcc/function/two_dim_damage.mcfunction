@@ -1,0 +1,1 @@
+damage @s 100 minecraft:falling_anvil

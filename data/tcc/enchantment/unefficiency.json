@@ -1,0 +1,88 @@
+{
+    "anvil_cost": 1,
+    "description": {
+      "translate": "enchantment.tcc.unefficiency",
+      "fallback":"降效增本"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": -10.0,
+            "per_level_above_first": -10.0
+          },
+          "attribute": "minecraft:player.mining_efficiency",
+          "id": "enchantment.unefficiency",
+          "operation": "add_value"
+        }
+      ],
+      "minecraft:hit_block": [
+        {
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 3
+          },
+          "requirements": {
+            "chance":{
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0.20,
+                "per_level_above_first": 0.15
+              }
+            },
+            "condition": "minecraft:random_chance"
+          }
+        }
+      ],
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "attacker",
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 5
+          },
+          "requirements": {
+            "chance": 0.5,
+            "condition": "minecraft:random_chance"
+          }
+        },
+        {
+          "enchanted": "victim",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 6
+          },
+          "requirements": {
+            "chance":{
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0.20,
+                "per_level_above_first": 0.15
+              }
+            },
+            "condition": "minecraft:random_chance"
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 51,
+      "per_level_above_first": 10
+    },
+    "max_level": 5,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "exclusive_set": "#tcc:exclusive_set/efficiency",
+    "supported_items": "#minecraft:enchantable/mining",
+    "weight": 2
+  }

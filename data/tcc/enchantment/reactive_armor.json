@@ -1,0 +1,94 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.reactive_armor",
+      "fallback":"反应装甲"
+    },
+    "effects": {
+      "minecraft:damage_protection": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 3.0,
+              "per_level_above_first": 3.0
+            }
+          },
+          "requirements": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+              "tags": [
+                {
+                  "expected": true,
+                  "id": "minecraft:is_projectile"
+                },
+                {
+                  "expected": false,
+                  "id": "minecraft:bypasses_invulnerability"
+                }
+              ]
+            }
+          }
+        }
+    ],
+    "minecraft:post_attack": [
+        {
+            "affected": "victim",
+            "effect": {
+              "type": "minecraft:explode",
+              "block_interaction": "trigger",
+              "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+              "knockback_multiplier": {
+                "type": "minecraft:linear",
+                "base": 0.075,
+                "per_level_above_first": 0.03
+              },
+              "large_particle": {
+                "type": "minecraft:gust_emitter_large"
+              },
+              "radius": 3.5,
+              "small_particle": {
+                "type": "minecraft:gust_emitter_small"
+              },
+              "sound": "minecraft:entity.wind_charge.wind_burst"
+            },
+            "enchanted": "victim"
+        },
+        {
+          "enchanted": "victim",
+          "affected": "victim",
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 4
+          },
+          "requirements": {
+            "chance":{
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 0.20,
+                "per_level_above_first": 0.15
+              }
+            },
+            "condition": "minecraft:random_chance"
+          }
+        }
+      ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/projectile_protection",
+    "max_cost": {
+      "base": 9,
+      "per_level_above_first": 6
+    },
+    "max_level": 4,
+    "min_cost": {
+      "base": 3,
+      "per_level_above_first": 6
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 5
+  }

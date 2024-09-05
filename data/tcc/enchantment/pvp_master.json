@@ -1,0 +1,46 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.pvp_master",
+      "fallback":"PVP大佬"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+            "amount": {
+                "type": "minecraft:linear",
+                "base": -100,
+                "per_level_above_first": -100
+              },
+          "attribute": "minecraft:player.sweeping_damage_ratio",
+          "id": "enchantment.pvp_master_disable_sweep",
+          "operation": "add_value"
+        },
+        {
+          "amount": {
+              "type": "minecraft:linear",
+              "base": 100,
+              "per_level_above_first": 100
+            },
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "enchantment.pvp_master_atk_speed",
+        "operation": "add_value"
+      }
+      ]
+    },
+    "max_cost": {
+      "base": 20,
+      "per_level_above_first": 9
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 9
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "exclusive_set": "#tcc:exclusive_set/pvp_master",
+    "supported_items": "#minecraft:enchantable/sword",
+    "weight": 2
+  }

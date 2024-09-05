@@ -1,0 +1,42 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.machine_gun",
+      "fallback":"加特林"
+    },
+    "effects": {
+      "minecraft:crossbow_charge_time": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": -1.25,
+          "per_level_above_first": -0.0
+        }
+      },
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "attacker",
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 1
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 12,
+      "per_level_above_first": 20
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "exclusive_set": "#tcc:exclusive_set/machine_gun",
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "weight": 5
+  }

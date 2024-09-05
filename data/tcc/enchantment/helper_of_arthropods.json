@@ -1,0 +1,46 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.tcc.helper_of_arthropods",
+    "fallback":"节肢帮手"
+  },
+  "effects": {
+    "minecraft:damage": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": -2.0,
+            "per_level_above_first": -1.5
+          }
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:sensitive_to_bane_of_arthropods"
+          }
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/bane_of_arthropods",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 2
+}

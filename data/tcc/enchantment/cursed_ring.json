@@ -1,0 +1,36 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.cursed_ring",
+      "fallback":"七咒之戒"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 1000,
+            "per_level_above_first": 0.15
+          },
+          "attribute": "minecraft:generic.burning_time",
+          "id": "enchantment.cursed_ring",
+          "operation": "add_multiplied_base"
+        }
+      ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/fire_protection",
+    "max_cost": {
+      "base": 18,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 2
+  }

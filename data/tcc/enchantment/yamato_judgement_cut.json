@@ -1,0 +1,110 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.tcc.yamato_judgement_cut",
+    "fallback":"阎魔审判"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:yamato_cut"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.25
+            }
+          },
+          "condition": "minecraft:random_chance"
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:yamato_cut"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.25
+            }
+          },
+          "condition": "minecraft:random_chance"
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:yamato_cut"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.25
+            }
+          },
+          "condition": "minecraft:random_chance"
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:yamato_cut"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.25
+            }
+          },
+          "condition": "minecraft:random_chance"
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:yamato_cut"
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "exclusive_set": "#tcc:exclusive_set/explosion_mahou",
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 2
+}

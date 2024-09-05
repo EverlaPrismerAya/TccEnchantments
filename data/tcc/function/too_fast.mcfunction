@@ -1,0 +1,1 @@
+damage @s 10 minecraft:fly_into_wall

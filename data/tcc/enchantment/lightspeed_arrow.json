@@ -1,0 +1,61 @@
+{
+    "anvil_cost": 1,
+    "description": {
+      "translate": "enchantment.tcc.lightspeed_arrow",
+      "fallback":"光粒打击"
+    },
+    "effects": {
+      "minecraft:crossbow_charge_time": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": 0.3,
+          "per_level_above_first": 0.3
+        }
+      },
+        "minecraft:damage": [
+            {
+              "effect": {
+                "type": "minecraft:add",
+                "value": {
+                  "type": "minecraft:linear",
+                  "base": 2.5,
+                  "per_level_above_first": 2
+                }
+              },
+              "requirements": {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "#minecraft:arrows"
+                }
+              }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+              "enchanted": "attacker",
+              "affected": "attacker",
+              "effect": {
+                "type": "minecraft:damage_item",
+                "amount": 70
+              }
+            }
+          ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/millionshot",
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 4,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 10
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/crossbow",
+    "weight": 10
+  }

@@ -1,0 +1,34 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.two_dim_foil",
+      "fallback":"二向箔"
+    },
+    "effects": {
+        "minecraft:post_attack": [
+            {
+              "affected": "attacker",
+              "effect": {
+                "type": "minecraft:run_function",
+                "function": "tcc:two_dim_damage"
+              },
+              "enchanted": "attacker"
+            }
+        ]
+      },
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "exclusive_set": "#tcc:exclusive_set/density",
+    "supported_items": "#minecraft:enchantable/mace",
+    "weight": 5
+  }

@@ -1,0 +1,56 @@
+{
+    "anvil_cost": 114514,
+    "description": {
+      "translate": "enchantment.tcc.instakill_axe",
+      "fallback":"传说中的咬人虎"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+            "amount": {
+                "type": "minecraft:linear",
+                "base": 60,
+                "per_level_above_first": 0.0
+              },
+          "attribute": "minecraft:generic.attack_damage",
+          "id": "enchantment.instakill_axe_atk_dmg",
+          "operation": "add_value"
+        },
+        {
+          "amount": {
+              "type": "minecraft:linear",
+              "base": 100,
+              "per_level_above_first": 0.0
+            },
+        "attribute": "minecraft:generic.attack_speed",
+        "id": "enchantment.instakill_axe_atk_speed",
+        "operation": "add_value"
+        }
+      ],
+      "minecraft:post_attack": [
+        {
+          "enchanted": "attacker",
+          "affected": "attacker",
+          "effect": {
+            "type": "minecraft:damage_item",
+            "amount": 32767
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 114514,
+      "per_level_above_first": 21
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 114514,
+      "per_level_above_first": 13
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/gold_axe",
+    "exclusive_set": "#tcc:exclusive_set/instakill_axe",
+    "weight": 2
+  }

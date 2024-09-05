@@ -1,0 +1,120 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.tcc.friend_of_undead",
+    "fallback":"亡灵之友"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": 3.0,
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 2
+          },
+          "min_amplifier": 3.0,
+          "min_duration": 5,
+          "to_apply": "minecraft:strength"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:sensitive_to_smite"
+          }
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": 3.0,
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 0.1,
+            "per_level_above_first": 0.01
+          },
+          "min_amplifier": 3.0,
+          "min_duration": 0.1,
+          "to_apply": "minecraft:instant_damage"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:sensitive_to_smite"
+          }
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": 3.0,
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 2
+          },
+          "min_amplifier": 3.0,
+          "min_duration": 5,
+          "to_apply": "minecraft:resistance"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:sensitive_to_smite"
+          }
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": 3.0,
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 2
+          },
+          "min_amplifier": 3.0,
+          "min_duration": 5,
+          "to_apply": "minecraft:speed"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:sensitive_to_smite"
+          }
+        }
+      }
+
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/smite",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 8
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 8
+  },
+  "primary_items": "#minecraft:enchantable/sword",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 2
+}

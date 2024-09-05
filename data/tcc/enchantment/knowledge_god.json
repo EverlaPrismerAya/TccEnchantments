@@ -1,0 +1,91 @@
+{
+    "anvil_cost": 1,
+    "description": {
+      "translate": "enchantment.tcc.knowledge_god",
+      "fallback":"知识，与你分享"
+    },
+    "effects": {
+        "minecraft:post_attack": [
+            {
+              "affected": "victim",
+              "effect": {
+                "type": "minecraft:run_function",
+                "function": "tcc:knowledge_god_summon_xp_orb"
+              },
+              "enchanted": "victim",
+              "requirements": {
+                "chance": {
+                  "type": "minecraft:enchantment_level",
+                  "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.0,
+                    "per_level_above_first": 0.3
+                  }
+                },
+                "condition": "minecraft:random_chance"
+              }
+            },
+            {
+                "affected": "victim",
+                "effect": {
+                  "type": "minecraft:run_function",
+                  "function": "tcc:knowledge_god_summon_xp_orb"
+                },
+                "enchanted": "victim",
+                "requirements": {
+                  "chance": {
+                    "type": "minecraft:enchantment_level",
+                    "amount": {
+                      "type": "minecraft:linear",
+                      "base": 0.0,
+                      "per_level_above_first": 0.3
+                    }
+                  },
+                  "condition": "minecraft:random_chance"
+                }
+            },
+            {
+                "affected": "victim",
+                "effect": {
+                  "type": "minecraft:run_function",
+                  "function": "tcc:knowledge_god_summon_xp_orb"
+                },
+                "enchanted": "victim",
+                "requirements": {
+                  "chance": {
+                    "type": "minecraft:enchantment_level",
+                    "amount": {
+                      "type": "minecraft:linear",
+                      "base": 0.0,
+                      "per_level_above_first": 0.3
+                    }
+                  },
+                  "condition": "minecraft:random_chance"
+                }
+            },
+            {
+                "affected": "victim",
+                "effect": {
+                  "type": "minecraft:run_function",
+                  "function": "tcc:knowledge_god_summon_xp_orb"
+                },
+                "enchanted": "victim"
+            }
+        ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/mending",
+    "max_cost": {
+      "base": 12,
+      "per_level_above_first": 11
+    },
+    "max_level": 3,
+    "min_cost": {
+      "base": 1,
+      "per_level_above_first": 11
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 10
+  }

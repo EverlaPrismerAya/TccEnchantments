@@ -1,0 +1,43 @@
+{
+    "anvil_cost": 5,
+    "description": {
+        "translate": "enchantment.tcc.villager_slayer",
+        "fallback": "奸商杀手"
+    },
+    "effects": {
+      "minecraft:damage": [
+        {
+          "effect": {
+            "type": "minecraft:add",
+            "value": {
+              "type": "minecraft:linear",
+              "base": 10000.0,
+              "per_level_above_first": 10000.0
+            }
+          },
+          "requirements": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#tcc:sensitive_to_villager_slayer"
+            }
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 25,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 5,
+      "per_level_above_first": 8
+    },
+    "primary_items": "#minecraft:enchantable/sword",
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/weapon",
+    "weight": 5
+  }

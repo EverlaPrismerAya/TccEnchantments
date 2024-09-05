@@ -1,0 +1,34 @@
+{
+    "anvil_cost": 4,
+    "description": {
+      "translate": "enchantment.tcc.too_fast_riptide",
+      "fallback":"超速"
+    },
+    "effects": {
+      "minecraft:post_attack": [
+        {
+          "affected": "attacker",
+            "effect": {
+              "type": "minecraft:run_function",
+              "function": "tcc:too_fast"
+            },
+          "enchanted": "attacker"
+        }
+      ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/riptide",
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 3,
+    "min_cost": {
+      "base": 17,
+      "per_level_above_first": 7
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/trident",
+    "weight": 2
+  }

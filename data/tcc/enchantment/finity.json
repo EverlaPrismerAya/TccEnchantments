@@ -1,0 +1,38 @@
+{
+    "anvil_cost": 8,
+    "description": {
+      "translate": "enchantment.tcc.finity",
+      "fallback":"有限"
+    },
+    "effects": {
+      "minecraft:ammo_use": [
+        {
+          "effect": {
+            "type": "minecraft:set",
+            "value": 4.0
+          },
+          "requirements": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "tag": "#minecraft:arrows"
+            }
+          }
+        }
+      ]
+    },
+    "exclusive_set": "#tcc:exclusive_set/infinity",
+    "max_cost": {
+      "base": 50,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 20,
+      "per_level_above_first": 0
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/bow",
+    "weight": 1
+  }
