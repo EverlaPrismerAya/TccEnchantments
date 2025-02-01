@@ -2,7 +2,7 @@
   "anvil_cost": 4,
   "description": {
     "translate": "enchantment.tcc.explosion_mahou",
-    "fallback":"爆裂魔法"
+    "fallback":"§a爆裂魔法"
   },
   "effects": {
     "minecraft:post_attack": [

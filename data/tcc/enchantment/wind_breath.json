@@ -1,0 +1,71 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.wind_breath",
+    "fallback": "§a风息"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "all_of",
+          "effects": [
+            {
+              "type": "minecraft:explode",
+              "block_interaction": "none",
+              "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
+              "knockback_multiplier": {
+                "type": "minecraft:linear",
+                "base": -0.75,
+                "per_level_above_first": -0.25
+              },
+              "large_particle": {
+                "type": "minecraft:gust_emitter_large"
+              },
+              "radius": 4,
+              "small_particle": {
+                "type": "minecraft:gust_emitter_large"
+              },
+              "sound": "minecraft:entity.breeze.wind_burst"
+            }
+          ]
+        },
+        "enchanted": "attacker"
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "damage_entity",
+          "damage_type": "minecraft:freeze",
+          "max_damage":{
+            "type": "minecraft:linear",
+            "base": 3.5,
+            "per_level_above_first": 2.5
+          },
+          "min_damage":{
+            "type": "minecraft:linear",
+            "base": 3.5,
+            "per_level_above_first": 2.5
+          }
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/explosion_mahou",
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/sword",
+  "weight": 5
+}

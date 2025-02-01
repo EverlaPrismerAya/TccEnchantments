@@ -2,7 +2,7 @@
     "anvil_cost": 4,
     "description": {
       "translate": "enchantment.tcc.pvp_master",
-      "fallback":"PVP大佬"
+      "fallback":"§aPVP大佬"
     },
     "effects": {
       "minecraft:attributes": [

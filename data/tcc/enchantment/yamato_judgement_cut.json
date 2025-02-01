@@ -2,7 +2,7 @@
   "anvil_cost": 4,
   "description": {
     "translate": "enchantment.tcc.yamato_judgement_cut",
-    "fallback":"阎魔审判"
+    "fallback":"§a阎魔审判"
   },
   "effects": {
     "minecraft:post_attack": [
