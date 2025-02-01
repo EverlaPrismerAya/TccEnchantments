@@ -1,2 +1,2 @@
 execute if block ~ ~ ~ #minecraft:mineable/obsidian_miner run setblock ~ ~ ~ air destroy
-execute unless block ~ ~ ~ #minecraft:mineable/obsidian_miner run effect give @s minecraft:mining_fatigue 1 255 true
+execute unless block ~ ~ ~ #minecraft:mineable/obsidian_miner unless block ~ ~ ~ air run effect give @s minecraft:mining_fatigue 1 255 true
