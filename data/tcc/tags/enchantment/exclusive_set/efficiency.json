@@ -1,6 +1,7 @@
 {
     "values":[
         "minecraft:efficiency",
-        "tcc:unefficiency"
+        "tcc:unefficiency",
+        "tcc:obsidian_miner"
     ]
 }
