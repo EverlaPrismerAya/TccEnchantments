@@ -26,7 +26,7 @@
             "per_level_above_first": 1
           },
           "min_duration": 3,
-          "to_apply": "minecraft:blindness"
+          "to_apply": "minecraft:absorption"
         },
         "enchanted": "attacker"
       }
