@@ -26,8 +26,8 @@
           },
           "min_damage":{
             "type": "minecraft:linear",
-            "base": 1,
-            "per_level_above_first": 1
+            "base": 2.5,
+            "per_level_above_first": 2.5
           }
         },
         "enchanted": "attacker"
