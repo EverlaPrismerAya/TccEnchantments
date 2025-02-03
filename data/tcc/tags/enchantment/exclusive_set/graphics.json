@@ -4,6 +4,7 @@
         "tcc:yamato_judgement_cut",
         "tcc:wind_breath",
         "tcc:amd_graphics",
-        "tcc:nvidia_graphics"
+        "tcc:nvidia_graphics",
+        "tcc:pvp_master"
     ]
 }
