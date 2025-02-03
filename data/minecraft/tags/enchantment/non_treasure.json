@@ -11,6 +11,9 @@
       "tcc:villager_slayer",
       "tcc:clever",
       "tcc:reaper",
-      "tcc:scythe"
+      "tcc:scythe",
+      "tcc:let_you_fly",
+      "tcc:nvidia_graphics",
+      "tcc:amd_graphics"
     ]
   }

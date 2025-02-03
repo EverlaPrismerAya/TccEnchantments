@@ -1,0 +1,42 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.tcc.nvidia_graphics",
+    "fallback":"N卡画质好"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": 0.0,
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 5,
+            "per_level_above_first": 5
+          },
+          "min_amplifier": 0.0,
+          "min_duration": 5,
+          "to_apply": "minecraft:blindness"
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/graphics",
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/melee_weapons",
+  "weight": 2
+}

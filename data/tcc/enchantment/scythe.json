@@ -10,7 +10,7 @@
         "amount": {
             "type": "minecraft:linear",
             "base": 2,
-            "per_level_above_first": 1
+            "per_level_above_first": 1.5
           },
         "attribute": "minecraft:generic.attack_damage",
         "id": "enchantment.scythe_atk_dmg",
@@ -34,6 +34,16 @@
           },
         "attribute": "minecraft:player.entity_interaction_range",
         "id": "enchantment.scythe_attack_range",
+        "operation": "add_value"
+      },
+      {
+        "amount": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 0
+          },
+        "attribute": "minecraft:player.block_interaction_range",
+        "id": "enchantment.scythe_interact_range",
         "operation": "add_value"
       }
     ]

@@ -44,6 +44,8 @@
     "tcc:machine_gun",
     "tcc:blade_of_blacksmith",
     "tcc:instakill_axe",
-    "tcc:everlasting"
+    "tcc:everlasting",
+    "tcc:feared_curse",
+    "tcc:overheal"
   ]
 }

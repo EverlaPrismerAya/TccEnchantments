@@ -2,14 +2,14 @@
     "anvil_cost": 114514,
     "description": {
       "translate": "enchantment.tcc.instakill_axe",
-      "fallback":"传说中的咬人虎"
+      "fallback":"§6传说中的咬人虎"
     },
     "effects": {
       "minecraft:attributes": [
         {
             "amount": {
                 "type": "minecraft:linear",
-                "base": 60,
+                "base": 120,
                 "per_level_above_first": 0.0
               },
           "attribute": "minecraft:generic.attack_damage",

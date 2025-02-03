@@ -1,0 +1,50 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.tcc.overheal",
+    "fallback":"§a过量治疗"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "max_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "max_duration": {
+            "type": "minecraft:linear",
+            "base": 3,
+            "per_level_above_first": 5
+          },
+          "min_amplifier": {
+            "type": "minecraft:linear",
+            "base": 0,
+            "per_level_above_first": 1
+          },
+          "min_duration": 3,
+          "to_apply": "minecraft:blindness"
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/overheal",
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 20
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/melee_weapons",
+  "weight": 2
+}

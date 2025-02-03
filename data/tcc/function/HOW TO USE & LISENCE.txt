@@ -1,7 +1,7 @@
 HOW TO USE:
 1. Run "/scoreboard players set min rng <minimum number>" to set a minimum number
 2. Run "/scoreboard players set max rng <maximum number>" to set a maximum number
-3. Run "/function rng:rng" to generate the number
+3. Run "/function tcc:rng" to generate the number
 4. Your ranom number between the given minimum and maximum is now stored as "out" in "rng"
 (Get it with "/scoreboard players operation <PLAYER> <SCOREBOARD> = out rng")
 

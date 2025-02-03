@@ -1,0 +1,52 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.amd_graphics",
+    "fallback": "A卡音质高"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:amd_sounds"
+        },
+        "enchanted": "attacker"
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "damage_entity",
+          "damage_type": "minecraft:sonic_boom",
+          "max_damage":{
+            "type": "minecraft:linear",
+            "base": 4,
+            "per_level_above_first": 4
+          },
+          "min_damage":{
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 2
+          }
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/graphics",
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/melee_weapons",
+  "weight": 5
+}
