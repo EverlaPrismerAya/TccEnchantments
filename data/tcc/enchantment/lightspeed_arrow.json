@@ -39,6 +39,13 @@
               "effect": {
                 "type": "minecraft:damage_item",
                 "amount": 70
+              },
+              "requirements": {
+              "condition": "minecraft:entity_properties",
+              "entity": "direct_attacker",
+              "predicate": {
+                "type": "#minecraft:arrows"
+                }
               }
             }
           ]
