@@ -2,5 +2,3 @@ scoreboard players add @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest]
 execute if entity @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest,scores={sonic_blast_max_range=..60}] anchored eyes positioned ^ ^ ^0.5 if block ~ ~ ~ #tcc:raycasts_can_pass_through run function tcc:actions/sonic_blast/effect
 execute if entity @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest,scores={sonic_blast_max_range=..60}] positioned ^ ^ ^0.5 if block ~ ~1 ~ #tcc:raycasts_can_pass_through run function tcc:actions/sonic_blast/repeat
 execute if entity @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest,scores={sonic_blast_max_range=..60}] positioned ^ ^ ^0.5 unless block ~ ~1 ~ #tcc:raycasts_can_pass_through run scoreboard players add @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest] sonic_blast_max_range 60
-execute if entity @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest,scores={sonic_blast_max_range=61..}] run tag @s remove tcc.entity.sonic_blast_owner
-execute if entity @e[tag=!tcc.entity.sonic_blast_owner,limit=1,sort=nearest,scores={sonic_blast_max_range=61..}] run scoreboard players reset @s sonic_blast_max_range
