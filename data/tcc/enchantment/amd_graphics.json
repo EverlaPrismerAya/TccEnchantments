@@ -21,13 +21,13 @@
           "damage_type": "minecraft:sonic_boom",
           "max_damage":{
             "type": "minecraft:linear",
-            "base": 2.5,
-            "per_level_above_first": 2.5
+            "base": 1.7,
+            "per_level_above_first": 1.7
           },
           "min_damage":{
             "type": "minecraft:linear",
-            "base": 2.5,
-            "per_level_above_first": 2.5
+            "base": 1.7,
+            "per_level_above_first": 1.7
           }
         },
         "enchanted": "attacker"
