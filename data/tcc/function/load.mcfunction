@@ -1,2 +1,3 @@
 scoreboard objectives add yamato_max_damage_count dummy
 scoreboard objectives add sonic_blast_max_range dummy
+scoreboard objectives add sonic_blast_cooldown dummy
