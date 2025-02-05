@@ -1,0 +1,30 @@
+{
+	"description": {
+		"translate": "enchantment.tcc.sonic_blast",
+		"fallback": "§a音爆"
+	},
+	"exclusive_set": "#tcc:exclusive_set/sonic_blast",
+	"supported_items": "#minecraft:enchantable/bow",
+	"weight": 2,
+	"max_level": 1,
+	"min_cost": {
+		"base": 50,
+		"per_level_above_first": 9
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 9
+	},
+	"anvil_cost": 6,
+	"slots": ["mainhand", "offhand"],
+	"effects": {
+		"minecraft:projectile_spawned": [
+			{
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:sonic_blast_trigger"
+				}
+			}
+		]
+	}
+}
