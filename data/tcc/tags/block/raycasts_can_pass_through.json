@@ -208,6 +208,8 @@
     "minecraft:crimson_fungus",
     "minecraft:warped_fungus",
     "minecraft:kelp",
-    "minecraft:cobweb"
+    "minecraft:cobweb",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom"
   ]
 }
