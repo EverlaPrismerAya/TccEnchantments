@@ -61,6 +61,7 @@
     "tcc:amd_graphics",
     "tcc:feared_curse",
     "tcc:sonic_blast",
-    "tcc:overheal"
+    "tcc:overheal",
+      "tcc:vein_mining"
   ]
 }
