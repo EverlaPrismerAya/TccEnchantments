@@ -109,6 +109,10 @@
     "minecraft:crimson_button",
     "minecraft:warped_button",
     "minecraft:bamboo_button",
+    "minecraft:mangrove_button",
+    "minecraft:cherry_button",
+    "minecraft:bamboo_button",
+    "minecraft:bamboo_sapling",
     "minecraft:crimson_pressure_plate",
     "minecraft:warped_pressure_plate",
     "minecraft:stone_pressure_plate",
@@ -122,6 +126,8 @@
     "minecraft:warped_pressure_plate",
     "minecraft:stone_pressure_plate",
     "minecraft:bamboo_pressure_plate",
+    "minecraft:mangrove_pressure_plate",
+    "minecraft:cherry_pressure_plate",
     "minecraft:polished_blackstone_pressure_plate",
     "minecraft:polished_blackstone_button",
     "minecraft:light_weighted_pressure_plate",
@@ -211,6 +217,11 @@
     "minecraft:cobweb",
     "minecraft:brown_mushroom",
     "minecraft:red_mushroom",
-    "minecraft:kelp_plant"
+    "minecraft:kelp_plant",
+    "minecraft:lily_pad",
+    "minecraft:oak_slab",
+    "#minecraft:slabs",
+    "#minecraft:flowers",
+    "#minecraft:flower_pots"
   ]
 }
