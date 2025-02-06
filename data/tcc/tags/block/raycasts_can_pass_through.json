@@ -222,6 +222,8 @@
     "minecraft:oak_slab",
     "#minecraft:slabs",
     "#minecraft:flowers",
-    "#minecraft:flower_pots"
+    "#minecraft:flower_pots",
+    "#minecraft:trapdoors",
+    "#minecraft:climbable"
   ]
 }
