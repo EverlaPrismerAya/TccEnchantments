@@ -12,3 +12,7 @@ execute as @a[scores={sonic_blast_cooldown=1}] run title @s actionbar [{"text":"
 execute as @a[scores={sonic_blast_cooldown=2..20}] run title @s actionbar [{"translate":"enchantments.tcc.sonic_blast.cooldown.prefix","fallback":"还有"},{"score":{"objective":"sonic_blast_cooldown","name":"@s"}},{"translate":"enchantments.tcc.sonic_blast.cooldown.suffix","fallback":"刻冷却完毕"}]
 execute as @e[scores={sonic_blast_max_range=61..}] run scoreboard players reset @s sonic_blast_max_range
 execute as @e[scores={sonic_blast_max_range=1..}] run scoreboard players add @s sonic_blast_max_range 1
+
+#amd invulnerability frame
+scoreboard players add @e amd_inv_frame 0
+scoreboard players remove @e[scores={amd_inv_frame=1..}] amd_inv_frame 1

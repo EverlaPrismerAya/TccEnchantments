@@ -17,18 +17,8 @@
       {
         "affected": "victim",
         "effect": {
-          "type": "damage_entity",
-          "damage_type": "minecraft:sonic_boom",
-          "max_damage":{
-            "type": "minecraft:linear",
-            "base": 1.7,
-            "per_level_above_first": 1.7
-          },
-          "min_damage":{
-            "type": "minecraft:linear",
-            "base": 1.7,
-            "per_level_above_first": 1.7
-          }
+          "type": "minecraft:run_function",
+          "function": "tcc:amd_graphics"
         },
         "enchanted": "attacker"
       }
