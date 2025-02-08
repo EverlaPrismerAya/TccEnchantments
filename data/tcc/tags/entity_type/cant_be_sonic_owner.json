@@ -27,6 +27,23 @@
         "minecraft:interaction",
         "minecraft:dragon_fireball",
         "minecraft:wind_charge",
-        "minecraft:breeze_wind_charge"
+        "minecraft:breeze_wind_charge",
+        "minecraft:armor_stand",
+        "minecraft:tnt",
+        "minecraft:falling_block",
+        "minecraft:ender_crystal",
+        "minecraft:firework_rocket",
+        "minecraft:shulker_bullet",
+        "minecraft:minecart",
+        "minecraft:chest_minecart",
+        "minecraft:furnace_minecart",
+        "minecraft:tnt_minecart",
+        "minecraft:hopper_minecart",
+        "minecraft:spawner_minecart",
+        "minecraft:command_block_minecart",
+        "minecraft:boat",
+        "minecraft:lightning_bolt",
+        "minecraft:painting",
+        "minecraft:leash_knot"
     ]
 }
