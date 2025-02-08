@@ -1,0 +1,3 @@
+particle minecraft:sonic_boom ~ ~ ~ 0.1 0.1 0.1 1 1
+execute positioned ~ ~-1 ~ as @e[type=!#tcc:immune_to_custom_aoe_damage,distance=..5,tag=!tcc.entity.sonic_blast_owner] run scoreboard players add @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest] sonic_blast_max_range 60
+execute positioned ~ ~-1 ~ as @e[type=!#tcc:immune_to_custom_aoe_damage,distance=..5,tag=!tcc.entity.sonic_blast_owner] run damage @s 20 sonic_boom by @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest]
