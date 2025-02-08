@@ -3,6 +3,7 @@
     "values": [
         "minecraft:ghast",
         "minecraft:elder_guardian",
-        "minecraft:ravager"
+        "minecraft:ravager",
+        "minecraft:wither"
     ]
 }
