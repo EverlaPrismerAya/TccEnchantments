@@ -1,2 +1,2 @@
 execute positioned ~ ~-1 ~ as @e[type=#tcc:sonic_beam_more_larger_hitbox,distance=..5,tag=!tcc.entity.sonic_blast_owner] run scoreboard players add @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest] sonic_blast_max_range 60
-execute positioned ~ ~-1 ~ as @e[type=#tcc:sonic_beam_more_larger_hitbox,type=distance=..5,tag=!tcc.entity.sonic_blast_owner] run damage @s 20 sonic_boom by @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest]
+execute positioned ~ ~-1 ~ as @e[type=#tcc:sonic_beam_more_larger_hitbox,distance=..5,tag=!tcc.entity.sonic_blast_owner] run damage @s 20 sonic_boom by @e[tag=tcc.entity.sonic_blast_owner,limit=1,sort=nearest]
