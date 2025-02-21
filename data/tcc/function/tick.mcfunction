@@ -16,3 +16,7 @@ execute as @e[scores={sonic_blast_max_range=1..}] run scoreboard players add @s 
 #amd invulnerability frame
 scoreboard players add @e amd_inv_frame 0
 scoreboard players remove @e[scores={amd_inv_frame=1..}] amd_inv_frame 1
+
+#no gravity arrow vanish
+execute as @e[tag=tcc.entity.arrow_no_gravity] if predicate tcc:in_ground run kill @s
+execute as @e[tag=tcc.entity.arrow_no_gravity] unless predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/tick

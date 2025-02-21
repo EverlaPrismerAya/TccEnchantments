@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "#minecraft:arrows",
-		"nbt": "{inGround: 0b}"
+		"nbt": "{inGround: 1b}"
 	}
 }
