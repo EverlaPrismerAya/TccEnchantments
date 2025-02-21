@@ -5,6 +5,19 @@
       "fallback":"超速"
     },
     "effects": {
+      "minecraft:trident_sound": [
+        "minecraft:item.trident.riptide_1",
+        "minecraft:item.trident.riptide_2",
+        "minecraft:item.trident.riptide_3"
+      ],
+      "minecraft:trident_spin_attack_strength": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": 1.9,
+          "per_level_above_first": 0.97
+        }
+      },
       "minecraft:post_attack": [
         {
           "affected": "attacker",

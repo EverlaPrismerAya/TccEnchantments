@@ -1,0 +1,48 @@
+{
+	"description": {
+		"translate": "enchantment.tcc.sonic_blast",
+		"fallback": "§a狙击手"
+	},
+	"supported_items": "#minecraft:enchantable/bow",
+	"weight": 2,
+	"max_level": 1,
+	"min_cost": {
+		"base": 50,
+		"per_level_above_first": 9
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 9
+	},
+	"anvil_cost": 6,
+	"slots": ["mainhand", "offhand"],
+	"effects": {
+		"minecraft:projectile_spawned": [
+			{
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:arrow_no_gravity"
+				}
+			}
+		],
+		"minecraft:damage": [
+      		{
+      		  	"effect": {
+      		  	 	"type": "minecraft:add",
+      		  	 	"value": {
+      		  	 	  "type": "minecraft:linear",
+      		  	 	  "base": 0.5,
+      		  	 	  "per_level_above_first": 0.2
+      		  	 	}
+      		  	},
+      		  	"requirements": {
+      		  	  	"condition": "minecraft:entity_properties",
+      		  	  	"entity": "direct_attacker",
+      		  	  	"predicate": {
+      		  	  	  "type": "#minecraft:arrows"
+      		  	  	}
+      		  	}
+      		}
+    	]
+	}
+}

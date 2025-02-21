@@ -49,6 +49,7 @@
       "tcc:nvidia_graphics",
       "tcc:amd_graphics",
       "tcc:feared_curse",
-      "tcc:vein_mining"
+      "tcc:vein_mining",
+      "tcc:sniper"
     ]
   }
