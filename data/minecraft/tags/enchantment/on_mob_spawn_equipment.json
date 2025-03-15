@@ -1,7 +1,7 @@
 {
     "values": [
         "#minecraft:non_treasure",
-        "#tcc:tcc_enchantments",
+        "#minecraft:tcc_enchantments",
         "tcc:sniper"
     ]
 }

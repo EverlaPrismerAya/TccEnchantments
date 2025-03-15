@@ -20,10 +20,3 @@ scoreboard players remove @e[scores={amd_inv_frame=1..}] amd_inv_frame 1
 #no gravity arrow vanish
 execute as @e[tag=tcc.entity.arrow_no_gravity] if predicate tcc:in_ground run kill @s
 execute as @e[tag=tcc.entity.arrow_no_gravity] unless predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/tick
-
-#gamerule force enable
-execute if score sendCommandFeedBack tcc.gamerule matches 1 run gamerule sendCommandFeedback true
-execute if score commandBlockOutput tcc.gamerule matches 1 run gamerule commandBlockOutput true
-
-execute if score sendCommandFeedBack tcc.gamerule matches 0 run gamerule sendCommandFeedback false
-execute if score commandBlockOutput tcc.gamerule matches 0 run gamerule commandBlockOutput false
