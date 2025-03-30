@@ -13,7 +13,7 @@
                 "per_level_above_first": -5
               },
               "attribute": "minecraft:generic.luck",
-              "id": "enchantment.glass_falling",
+              "id": "enchantment.unfortune",
               "operation": "add_value"
             }
           ]

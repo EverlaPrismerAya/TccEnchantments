@@ -18,5 +18,5 @@ scoreboard players add @e amd_inv_frame 0
 scoreboard players remove @e[scores={amd_inv_frame=1..}] amd_inv_frame 1
 
 #no gravity arrow vanish
-execute as @e[tag=tcc.entity.arrow_no_gravity] if predicate tcc:in_ground run kill @s
-execute as @e[tag=tcc.entity.arrow_no_gravity] unless predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/tick
+execute as @e[tag=tcc.entity.arrow_no_gravity] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
+execute as @e[tag=tcc.entity.arrow_no_gravity] at @s unless predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/tick
