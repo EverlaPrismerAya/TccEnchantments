@@ -10,7 +10,7 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:explode",
-          "block_interaction": "trigger",
+          "block_interaction": "none",
           "immune_blocks": "#minecraft:blocks_wind_charge_explosions",
           "knockback_multiplier": {
             "type": "minecraft:linear",

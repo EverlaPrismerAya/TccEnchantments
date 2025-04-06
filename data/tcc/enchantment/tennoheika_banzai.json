@@ -1,0 +1,130 @@
+{
+	"description": {
+		"translate": "enchantment.tcc.tennoheika_banzai",
+		"fallback": "§6天闹黑卡，板载！"
+	},
+	"supported_items": "#minecraft:enchantable/bow",
+	"weight": 2,
+	"max_level": 1,
+	"min_cost": {
+		"base": 50,
+		"per_level_above_first": 9
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 9
+	},
+	"anvil_cost": 6,
+	"slots": ["mainhand", "offhand"],
+	"exclusive_set": "#tcc:exclusive_set/power",
+	"effects": {
+		"minecraft:projectile_spawned": [
+			{
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:player_missile"
+				}
+			}
+		],
+		"minecraft:damage": [
+      		{
+      		  	"effect": {
+      		  	 	"type": "minecraft:add",
+      		  	 	"value": {
+      		  	 	  "type": "minecraft:linear",
+      		  	 	  "base": 2.0,
+      		  	 	  "per_level_above_first": 0.0
+      		  	 	}
+      		  	},
+      		  	"requirements": {
+      		  	  	"condition": "minecraft:entity_properties",
+      		  	  	"entity": "direct_attacker",
+      		  	  	"predicate": {
+      		  	  	  "type": "#minecraft:arrows"
+      		  	  	}
+      		  	}
+      		}
+    	],
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"attribute_to_user": true,
+					"type": "minecraft:explode",
+					"damage_type": "minecraft:arrow",
+					"radius": {
+						"type": "minecraft:linear",
+						"base": 5.0,
+						"per_level_above_first": 0
+					},
+					"offset":[0,0.65,0],
+					"knockback_multiplier": {
+						"type": "minecraft:linear",
+						"base": 2.0,
+						"per_level_above_first": 0.0
+					},
+					"block_interaction": "none",
+					"small_particle": {
+						"type": "minecraft:explosion"
+					},
+					"large_particle": {
+						"type": "minecraft:explosion_emitter"
+					},
+					"sound": "minecraft:entity.generic.explode"
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "direct_attacker",
+					"predicate": {
+						"type": "#minecraft:arrows"
+					}
+				}
+			}
+		],
+		"minecraft:hit_block": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:explode",
+							"damage_type": "minecraft:arrow",
+							"radius": {
+								"type": "minecraft:linear",
+								"base": 5.0,
+								"per_level_above_first": 0
+							},
+							"offset":[0,0.65,0],
+							"knockback_multiplier": {
+        					    "type": "minecraft:linear",
+        					    "base": 2.0,
+        					    "per_level_above_first": 0.0
+        					},
+							"block_interaction": "none",
+							"small_particle": {
+								"type": "minecraft:explosion"
+							},
+							"large_particle": {
+								"type": "minecraft:explosion_emitter"
+							},
+							"sound": "minecraft:entity.generic.explode"
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type": "#minecraft:arrows"
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

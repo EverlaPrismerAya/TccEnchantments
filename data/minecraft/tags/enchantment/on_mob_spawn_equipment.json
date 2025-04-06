@@ -2,6 +2,7 @@
     "values": [
         "#minecraft:non_treasure",
         "#minecraft:tcc_enchantments",
-        "tcc:sniper"
+        "tcc:sniper",
+        "tcc:wind_breath"
     ]
 }
