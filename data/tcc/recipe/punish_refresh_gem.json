@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+      "L": {
+        "item": "minecraft:lapis_lazuli"
+      },
+      "C": {
+        "item": "minecraft:end_crystal"
+      },
+      "T": {
+        "item": "minecraft:totem_of_undying"
+      }
+    },
+    "pattern": [
+      "LCL",
+      "CTC",
+      "LCL"
+    ],
+    "result": {
+      "count": 1,
+      "id": "minecraft:diamond",
+      "components": {
+        "enchantment_glint_override":true,
+        "custom_model_data":12700014,
+        "fire_resistant":{},
+        "rarity":"epic",
+        "item_name": "惩罚刷新宝石",
+        "lore":[
+          "{\"text\":\"副手手持本物品，主手手持要刷新的物品\",\"color\":\"aqua\",\"italic\":false}",
+          "{\"text\":\"长按右键即可刷新\",\"color\":\"aqua\",\"italic\":false}"
+        ],
+        "food":{
+        "eat_seconds":1.0,
+        "saturation":0.0,
+        "effects":[],
+        "nutrition":0,
+        "can_always_eat":true
+        }
+      }
+    }
+}

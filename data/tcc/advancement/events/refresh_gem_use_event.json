@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:diamond"
+          ],
+          "components": {
+            "custom_model_data":12700014
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "event"
+    ]
+  ],
+  "rewards": {
+		"function": "tcc:refresh_gem_use_event"
+	},
+  "sends_telemetry_event": false
+}
