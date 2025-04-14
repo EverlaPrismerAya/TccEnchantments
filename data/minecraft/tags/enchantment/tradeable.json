@@ -55,6 +55,7 @@
       "tcc:geology_cannon",
       "tcc:shock_sovereign",
       "tcc:electricity_sovereign",
-      "tcc:shrinking_cylinder_sovereign"
+      "tcc:shrinking_cylinder_sovereign",
+      "tcc:shrinking_cylinder_curse"
     ]
   }

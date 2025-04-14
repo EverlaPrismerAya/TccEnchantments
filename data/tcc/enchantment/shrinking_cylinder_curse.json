@@ -1,0 +1,44 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.shrinking_cylinder_curse",
+      "fallback": "缩缸诅咒"
+    },
+    "effects": {
+		"minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:insta_death"
+        },
+        "enchanted": "victim",
+        "requirements": {
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.05,
+              "per_level_above_first": 0.0
+            }
+          },
+          "condition": "minecraft:random_chance"
+        		}
+      		}
+		]
+	},
+    "max_cost": {
+      "base": 18,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 5
+  }
