@@ -1,0 +1,60 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.electricity_sovereign",
+      "fallback": "耐电王"
+    },
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "amount": {
+            "type": "minecraft:linear",
+            "base": -0.15,
+            "per_level_above_first": -0.15
+          },
+          "attribute": "minecraft:generic.burning_time",
+          "id": "enchantment.electricity_sovereign",
+          "operation": "add_multiplied_base"
+        }
+      ],
+      "minecraft:damage_immunity": [
+        {
+          "effect": {},
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:damage_source_properties",
+                "predicate": {
+                  "tags": [
+                    {
+                      "expected": true,
+                      "id": "minecraft:is_fire"
+                    },
+                    {
+                      "expected": false,
+                      "id": "minecraft:bypasses_invulnerability"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 18,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 5
+  }

@@ -1,0 +1,1 @@
+execute unless predicate tcc:has_absorption run effect give @s minecraft:absorption 5 0 true

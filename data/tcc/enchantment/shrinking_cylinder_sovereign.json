@@ -1,0 +1,45 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.shrinking_cylinder_sovereign",
+      "fallback": "§a耐缩王"
+    },
+    "effects": {
+		"minecraft:tick": [
+			{
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:actions/anti_wither"
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+	      	"effects":{
+	      		"minecraft:wither": {
+	      			"amplifier":{
+	      				"min":0,
+	      				"max":255
+	      			  }
+	      		  }
+	      	  }
+	        }
+				}
+			}
+		]
+	},
+    "max_cost": {
+      "base": 18,
+      "per_level_above_first": 8
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 10,
+      "per_level_above_first": 8
+    },
+    "slots": [
+      "armor"
+    ],
+    "supported_items": "#minecraft:enchantable/armor",
+    "weight": 5
+  }

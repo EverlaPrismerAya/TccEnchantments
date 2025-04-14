@@ -15,6 +15,7 @@
       "tcc:let_you_fly",
       "tcc:nvidia_graphics",
       "tcc:amd_graphics",
-      "tcc:vein_mining"
+      "tcc:vein_mining",
+      "tcc:electricity_sovereign"
     ]
   }

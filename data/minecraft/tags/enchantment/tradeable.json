@@ -52,6 +52,9 @@
       "tcc:vein_mining",
       "tcc:sniper",
       "tcc:tennoheika_banzai",
-      "tcc:geology_cannon"
+      "tcc:geology_cannon",
+      "tcc:shock_sovereign",
+      "tcc:electricity_sovereign",
+      "tcc:shrinking_cylinder_sovereign"
     ]
   }

@@ -3,6 +3,8 @@
         "#minecraft:non_treasure",
         "#minecraft:tcc_enchantments",
         "tcc:sniper",
-        "tcc:wind_breath"
+        "tcc:wind_breath",
+        "tcc:shock_sovereign",
+        "tcc:shrinking_cylinder_sovereign"
     ]
 }

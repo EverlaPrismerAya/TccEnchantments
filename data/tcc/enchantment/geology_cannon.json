@@ -1,6 +1,6 @@
 {
 	"description": {
-		"translate": "enchantment.tcc.tennoheika_banzai",
+		"translate": "enchantment.tcc.geology_cannon",
 		"fallback": "§a地质大炮"
 	},
 	"supported_items": "#minecraft:enchantable/bow",
@@ -32,7 +32,7 @@
       		  	 	"type": "minecraft:add",
       		  	 	"value": {
       		  	 	  "type": "minecraft:linear",
-      		  	 	  "base": 2.0,
+      		  	 	  "base": 4.0,
       		  	 	  "per_level_above_first": 0.0
       		  	 	}
       		  	},
@@ -52,7 +52,7 @@
 				"effect": {
 					"attribute_to_user": true,
 					"type": "minecraft:explode",
-					"damage_type": "minecraft:arrow",
+					"damage_type": "minecraft:explosion",
 					"radius": {
 						"type": "minecraft:linear",
 						"base": 4,
@@ -89,7 +89,7 @@
 					"effects": [
 						{
 							"type": "minecraft:explode",
-							"damage_type": "minecraft:arrow",
+							"damage_type": "minecraft:explosion",
 							"radius": {
 								"type": "minecraft:linear",
 								"base": 4,
