@@ -5,6 +5,6 @@ I mean, I can't just still waiting 1.21 release here.
 
 The exciting data-driven enchantment is released, so I will use it to make some weird thing.
 
-At the moment it only support Simpilfied Chinese. but I will make a translation resourcepack later.
+The default language is Simplefied Chinese, so you should download the resource pack if you are not a Chinese native speaker.
 
 [Here's the translation resource pack](https://github.com/EverlaPrismerAya/TccEnchantments-Resources)
