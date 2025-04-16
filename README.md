@@ -7,4 +7,4 @@ The exciting data-driven enchantment is released, so I will use it to make some 
 
 At the moment it only support Simpilfied Chinese. but I will make a translation resourcepack later.
 
-*Maybe English translation will release before 2026 :)
+[Here's the translation resource pack](https://github.com/EverlaPrismerAya/TccEnchantments-Resources)
