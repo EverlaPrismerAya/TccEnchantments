@@ -4,7 +4,7 @@
       "tcc:cryo_inject",
       "tcc:reach",
       "tcc:hate_of_the_sea",
-      "tcc:bad_balt",
+      "tcc:bad_bait",
       "tcc:valkyrie",
       "tcc:neptune_reinforce",
       "tcc:bane_of_raiders",
@@ -16,6 +16,7 @@
       "tcc:nvidia_graphics",
       "tcc:amd_graphics",
       "tcc:vein_mining",
-      "tcc:electricity_sovereign"
+      "tcc:electricity_sovereign",
+      "tcc:hiss"
     ]
   }

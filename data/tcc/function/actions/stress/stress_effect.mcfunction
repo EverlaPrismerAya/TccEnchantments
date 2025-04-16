@@ -1,0 +1,1 @@
+scoreboard players add @s stress_effect 80

@@ -23,3 +23,5 @@ execute as @e[tag=tcc.entity.arrow_no_gravity] at @s unless predicate tcc:in_gro
 
 execute as @e[tag=tcc.entity.player_missile] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
 execute as @e[tag=tcc.entity.geology_cannon_projectile] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
+
+execute as @e[scores={stress_effect=1..}] at @s run function tcc:actions/stress/tick
