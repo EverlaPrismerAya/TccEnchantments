@@ -1,7 +1,5 @@
 {
-  "replace": true,
   "values": [
-    "tcc:fragile",
     "tcc:stress"
   ]
 }

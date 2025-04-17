@@ -1,7 +1,7 @@
 {
-    "values": [
-      "tcc:fragile",
-      "minecraft:freeze",
-      "minecraft:sonic_boom"
-    ]
+  "values": [
+    "tcc:fragile",
+    "minecraft:freeze",
+    "minecraft:sonic_boom"
+  ]
 }
