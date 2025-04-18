@@ -5,24 +5,49 @@
       "fallback":"背叛"
     },
     "effects": {
+    "minecraft:hit_block": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:run_function",
+              "function": "tcc:betray_trident"
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type": "minecraft:trident"
+							}
+						}
+					]
+				}
+			}
+		],
       "minecraft:trident_return_acceleration": [
-        {
-          "effect": {
-            "type": "minecraft:add",
-            "value": {
-              "type": "minecraft:linear",
-              "base": 255,
-              "per_level_above_first": 16
-            }
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1.0,
+            "per_level_above_first": 0.0
           }
         }
-      ]
+      }
+    ]
     },
     "max_cost": {
       "base": 50,
       "per_level_above_first": 0
     },
-    "max_level": 3,
+    "max_level": 1,
     "min_cost": {
       "base": 12,
       "per_level_above_first": 7

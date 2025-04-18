@@ -1,0 +1,1 @@
+tag @e[type=trident,distance=..3,limit=1,sort=nearest] add tcc.entity.betray_trident

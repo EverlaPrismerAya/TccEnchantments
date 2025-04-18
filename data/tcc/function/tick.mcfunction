@@ -30,3 +30,6 @@ execute as @e[scores={stress_effect=1..}] at @s run function tcc:actions/stress/
 
 #vein mining
 execute as @e[tag=tcc.entity.vein_trigger,type=minecraft:marker] at @s run function tcc:actions/vein_mining/tick
+
+#betray trident
+execute as @e[type=minecraft:trident,nbt={DealtDamage:true},tag=tcc.entity.betray_trident] at @s run damage @p[distance=..3] 8 minecraft:trident by @s
