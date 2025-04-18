@@ -1,0 +1,1 @@
+execute unless entity @e[tag=tcc.entity.vein_trigger,type=minecraft:marker,distance=..1] run summon minecraft:marker ~ ~ ~ {Tags:['tcc.entity.vein_trigger']}

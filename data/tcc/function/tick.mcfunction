@@ -21,7 +21,12 @@ scoreboard players remove @e[scores={amd_inv_frame=1..}] amd_inv_frame 1
 execute as @e[tag=tcc.entity.arrow_no_gravity] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
 execute as @e[tag=tcc.entity.arrow_no_gravity] at @s unless predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/tick
 
+#arrow things
 execute as @e[tag=tcc.entity.player_missile] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
 execute as @e[tag=tcc.entity.geology_cannon_projectile] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
 
+#stress effect
 execute as @e[scores={stress_effect=1..}] at @s run function tcc:actions/stress/tick
+
+#vein mining
+execute as @e[tag=tcc.entity.vein_trigger,type=minecraft:marker] at @s run function tcc:actions/vein_mining/tick

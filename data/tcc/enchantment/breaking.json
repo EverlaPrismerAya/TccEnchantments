@@ -5,58 +5,26 @@
       "fallback":"易损"
     },
     "effects": {
-      "minecraft:hit_block": [
-        {
-          "effect": {
-            "type": "minecraft:damage_item",
-            "amount": 3
-          },
-          "requirements": {
-            "chance":{
-              "type": "minecraft:enchantment_level",
-              "amount": {
-                "type": "minecraft:linear",
-                "base": 0.20,
-                "per_level_above_first": 0.15
-              }
-            },
-            "condition": "minecraft:random_chance"
-          }
-        }
-      ],
-      "minecraft:post_attack": [
-        {
-          "enchanted": "attacker",
-          "affected": "attacker",
-          "effect": {
-            "type": "minecraft:damage_item",
-            "amount": 5
-          },
-          "requirements": {
-            "chance": 0.8,
-            "condition": "minecraft:random_chance"
-          }
-        },
-        {
-          "enchanted": "victim",
-          "affected": "victim",
-          "effect": {
-            "type": "minecraft:damage_item",
-            "amount": 6
-          },
-          "requirements": {
-            "chance":{
-              "type": "minecraft:enchantment_level",
-              "amount": {
-                "type": "minecraft:linear",
-                "base": 0.4,
-                "per_level_above_first": 0.3
-              }
-            },
-            "condition": "minecraft:random_chance"
-          }
-        }
-      ]
+      "minecraft:item_damage": [
+			  {
+			  	"effect": {
+			  	  	"type": "minecraft:multiply",
+			  	  	"factor":{
+			  			"type": "minecraft:fraction",
+			  			"denominator": {
+			  			  "type": "minecraft:linear",
+			  			  "base": 1.0,
+			  			  "per_level_above_first": 0.0
+			  			},
+			  			"numerator": {
+			  			  "type": "minecraft:linear",
+			  			  "base": 2.0,
+			  			  "per_level_above_first": 1.0
+			  			}
+			  	  }
+			  	}
+			  }
+		  ]
     },
     "max_cost": {
       "base": 51,

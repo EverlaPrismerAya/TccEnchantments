@@ -1,6 +1,6 @@
 {
 	"description": {
-		"translate": "enchantment.tcc.sonic_blast",
+		"translate": "enchantment.tcc.sniper",
 		"fallback": "§a狙击手"
 	},
 	"supported_items": "#minecraft:enchantable/bow",

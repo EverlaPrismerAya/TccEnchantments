@@ -17,25 +17,26 @@
           "operation": "add_value"
         }
       ],
-      "minecraft:hit_block": [
-        {
-          "effect": {
-            "type": "minecraft:damage_item",
-            "amount": 3
-          },
-          "requirements": {
-            "chance":{
-              "type": "minecraft:enchantment_level",
-              "amount": {
-                "type": "minecraft:linear",
-                "base": 0.20,
-                "per_level_above_first": 0.15
-              }
-            },
-            "condition": "minecraft:random_chance"
-          }
-        }
-      ],
+      "minecraft:item_damage": [
+			  {
+			  	"effect": {
+			  	  	"type": "minecraft:multiply",
+			  	  	"factor":{
+			  			"type": "minecraft:fraction",
+			  			"denominator": {
+			  			  "type": "minecraft:linear",
+			  			  "base": 1.0,
+			  			  "per_level_above_first": 0.0
+			  			},
+			  			"numerator": {
+			  			  "type": "minecraft:linear",
+			  			  "base": 2.0,
+			  			  "per_level_above_first": 1.0
+			  			}
+			  	  }
+			  	}
+			  }
+		  ],
       "minecraft:post_attack": [
         {
           "enchanted": "attacker",
