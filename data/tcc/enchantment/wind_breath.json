@@ -2,7 +2,7 @@
   "anvil_cost": 1,
   "description": {
     "translate": "enchantment.tcc.wind_breath",
-    "fallback": "§a风息"
+    "fallback": "§d风息"
   },
   "effects": {
     "minecraft:post_attack": [
