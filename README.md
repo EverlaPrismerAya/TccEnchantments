@@ -11,4 +11,4 @@ The default language is Simplefied Chinese, so you should download the resource 
 
 [Here's the library datapack](https://github.com/EverlaPrismerAya/TccRelicsAndLoots)
 
-[Here's the library datapack's resource pack](https://github.com/EverlaPrismerAya/TccRelicsAndLoots-Resources)
+[Here's the library datapack's resource pack](https://github.com/EverlaPrismerAya/TccRelicsAndLoots-Resource)
