@@ -1,3 +1,3 @@
-execute as @e[type=minecraft:trident,tag=tcc.entity.pull_request_trident] at @s run tag @e[type=minecraft:item,sort=nearest,limit=1,distance=..3,tag=!tcc.entity.pull_request_item] add tcc.entity.pull_request_item
-execute as @e[type=minecraft:trident,tag=tcc.entity.pull_request_trident] at @s run data modify entity @e[type=minecraft:item,sort=nearest,limit=1,distance=..3,tag=tcc.entity.pull_request_item] Invulnerable set value true
-execute as @e[type=minecraft:trident,tag=tcc.entity.pull_request_trident] at @s run ride @e[type=minecraft:item,sort=nearest,limit=1,distance=..3,tag=tcc.entity.pull_request_item] mount @s
+execute as @e[type=minecraft:trident,tag=tcc.entity.pull_request_trident] at @s run tag @e[type=minecraft:item,sort=nearest,limit=5,distance=..3,tag=!tcc.entity.pull_request_item] add tcc.entity.pull_request_item
+execute as @e[type=minecraft:trident,tag=tcc.entity.pull_request_trident] at @s run execute as @e[type=minecraft:item,sort=nearest,limit=5,distance=..3,tag=tcc.entity.pull_request_item] run data modify entity @s Invulnerable set value true
+execute as @e[type=minecraft:trident,tag=tcc.entity.pull_request_trident] at @s run execute as @e[type=minecraft:item,sort=nearest,limit=5,distance=..3,tag=tcc.entity.pull_request_item] run ride @s mount @e[type=trident,tag=tcc.entity.pull_request_trident,sort=nearest,limit=1,distance=..3]
