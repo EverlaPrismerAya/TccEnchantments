@@ -2,7 +2,6 @@
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"type": "#minecraft:arrows",
 		"nbt": "{inGround: 1b}"
 	}
 }

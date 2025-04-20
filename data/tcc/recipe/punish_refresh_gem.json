@@ -25,10 +25,10 @@
         "custom_model_data":12700014,
         "fire_resistant":{},
         "rarity":"epic",
-        "item_name": "惩罚刷新宝石",
+        "item_name": "{\"translate\":\"item.tcc.punish_refresh_gem\",\"fallback\":\"惩罚刷新宝石\"}",
         "lore":[
-          "{\"text\":\"副手手持本物品，主手手持要刷新的物品\",\"color\":\"aqua\",\"italic\":false}",
-          "{\"text\":\"长按右键即可刷新\",\"color\":\"aqua\",\"italic\":false}"
+          "{\"translate\":\"item.tcc.punish_refresh_gem.desc.1\",\"fallback\":\"副手手持本物品，主手手持要刷新的物品\",\"color\":\"aqua\",\"italic\":false}",
+          "{\"translate\":\"item.tcc.punish_refresh_gem.desc.2\",\"fallback\":\"长按右键即可刷新\",\"color\":\"aqua\",\"italic\":false}"
         ],
         "food":{
         "eat_seconds":1.0,

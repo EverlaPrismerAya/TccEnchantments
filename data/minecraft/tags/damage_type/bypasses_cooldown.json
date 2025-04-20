@@ -2,6 +2,7 @@
   "values": [
     "tcc:fragile",
     "minecraft:freeze",
-    "minecraft:sonic_boom"
+    "minecraft:sonic_boom",
+    "tcc:mirage_trident"
   ]
 }

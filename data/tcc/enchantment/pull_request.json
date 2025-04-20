@@ -1,0 +1,75 @@
+{
+    "anvil_cost": 2,
+    "description": {
+      "translate": "enchantment.tcc.pull_request",
+      "fallback":"拉取请求"
+    },
+    "effects": {
+    "minecraft:hit_block": [
+			{
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:run_function",
+              "function": "tcc:actions/pull_request/trigger"
+						}
+					]
+				},
+				"requirements": {
+					"condition": "minecraft:all_of",
+					"terms": [
+						{
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type": "minecraft:trident"
+							}
+						}
+					]
+				}
+			}
+		],
+    "minecraft:post_attack": [
+        {
+          "affected": "victim",
+          "effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:run_function",
+              "function": "tcc:actions/pull_request/trigger"
+						}
+					]
+				  },
+          "enchanted": "attacker",
+          "requirements": {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "direct_attacker",
+                "predicate": {
+                  "type": "minecraft:trident"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "max_cost": {
+      "base": 24,
+      "per_level_above_first": 0
+    },
+    "max_level": 1,
+    "min_cost": {
+      "base": 12,
+      "per_level_above_first": 7
+    },
+    "slots": [
+      "mainhand"
+    ],
+    "supported_items": "#minecraft:enchantable/trident",
+    "weight": 5
+  }
