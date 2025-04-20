@@ -18,6 +18,7 @@
       "tcc:vein_mining",
       "tcc:electricity_sovereign",
       "tcc:hiss",
-      "tcc:pull_request"
+      "tcc:pull_request",
+      "tcc:betray"
     ]
   }
