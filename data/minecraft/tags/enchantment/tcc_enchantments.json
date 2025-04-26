@@ -63,6 +63,7 @@
     "tcc:sonic_blast",
     "tcc:overheal",
     "tcc:vein_mining",
-    "tcc:hiss"
+    "tcc:hiss",
+    "tcc:stealth"
   ]
 }

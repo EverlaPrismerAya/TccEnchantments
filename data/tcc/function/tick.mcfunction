@@ -22,6 +22,10 @@ execute as @e[tag=tcc.entity.arrow_no_gravity] at @s if predicate tcc:in_ground 
 execute as @e[tag=tcc.entity.arrow_no_gravity] at @s unless predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/tick
 
 #arrow things
+execute as @e[tag=tcc.entity.geology_cannon_projectile] at @s run particle minecraft:dust_color_transition{from_color: [0.4, 1.0, 1.0], scale: 1.0, to_color: [0.0, 0.3, 0.3]} ~ ~ ~ 0.2 0.2 0.2 0 30
+execute as @e[tag=tcc.entity.player_missile] at @s run particle minecraft:campfire_cosy_smoke ~ ~ ~ 0 0 0 0.01 3
+execute as @e[tag=tcc.entity.player_missile] at @s run particle minecraft:flame ~ ~ ~ 0 0 0 0.05 4
+
 execute as @e[tag=tcc.entity.player_missile] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
 execute as @e[tag=tcc.entity.geology_cannon_projectile] at @s if predicate tcc:in_ground run function tcc:actions/arrow_no_gravity/vanish
 
@@ -36,3 +40,14 @@ execute as @e[type=minecraft:trident,nbt={DealtDamage:true},tag=tcc.entity.betra
 
 #mirage trident
 execute as @e[type=minecraft:trident,tag=tcc.entity.mirage_trident] at @s run function tcc:actions/spear_of_justice/tick
+
+#fishing rod
+execute as @e[type=minecraft:fishing_bobber] at @s run function tcc:actions/fishing_rod/tick
+
+execute as @e[type=marker,tag=tcc.entity.mine_curse_marker] at @s unless entity @e[type=fishing_bobber,distance=..2] run function tcc:actions/mine_curse/triggered
+scoreboard players add @e[type=marker,tag=tcc.entity.mine_curse_marker] generic_lifetime 1
+kill @e[type=marker,tag=tcc.entity.mine_curse_marker,scores={generic_lifetime=20..}]
+
+execute as @e[type=marker,tag=tcc.entity.honey_hole_marker] at @s unless entity @e[type=fishing_bobber,distance=..2] run function tcc:actions/honey_hole/triggered
+scoreboard players add @e[type=marker,tag=tcc.entity.honey_hole_marker] generic_lifetime 1
+kill @e[type=marker,tag=tcc.entity.honey_hole_marker,scores={generic_lifetime=20..}]

@@ -3,6 +3,7 @@
     "tcc:fragile",
     "minecraft:freeze",
     "minecraft:sonic_boom",
-    "tcc:mirage_trident"
+    "tcc:mirage_trident",
+    "tcc:stealth"
   ]
 }

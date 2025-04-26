@@ -8,6 +8,7 @@
         "minecraft:sweeping_edge",
         "tcc:yamato_judgement_cut",
         "tcc:wind_breath",
-        "tcc:overheal"
+        "tcc:overheal",
+        "tcc:stealth"
     ]
 }

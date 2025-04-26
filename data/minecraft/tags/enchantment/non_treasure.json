@@ -19,6 +19,8 @@
       "tcc:electricity_sovereign",
       "tcc:hiss",
       "tcc:pull_request",
-      "tcc:betray"
+      "tcc:betray",
+      "tcc:stealth",
+      "tcc:honey_hole"
     ]
   }

@@ -1,0 +1,75 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.stealth",
+    "fallback": "潜伏"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "tcc:stealth",
+          "max_damage":{
+            "type":"linear",
+            "base": 8,
+            "per_level_above_first": 8
+          },
+          "min_damage":{
+            "type":"linear",
+            "base": 6,
+            "per_level_above_first": 6
+          }
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition":"minecraft:entity_scores",
+          "entity":"attacker",
+          "scores":{
+            "stealth":{
+              "min": 100,
+              "max": 2147483647
+            }
+          }
+        }
+      },
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:actions/stealth/reset_stealth"
+        },
+        "enchanted": "attacker"
+      }
+    ],
+    "minecraft:tick":[
+      {
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:actions/stealth/tick"
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {}
+				}
+			}
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/explosion_mahou",
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 11
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/melee_weapons",
+  "weight": 5
+}

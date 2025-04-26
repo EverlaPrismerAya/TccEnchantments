@@ -2,6 +2,7 @@
   "replace": true,
   "values": [
     "tcc:fragile",
-    "tcc:stress"
+    "tcc:stress",
+    "tcc:stealth"
   ]
 }

@@ -1,0 +1,61 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:barrel",
+                "functions": [
+                    {
+                        "function": "minecraft:set_loot_table",
+                        "type": "minecraft:barrel",
+                        "name": "tcc:enchantments/mysterious_crate"
+                    },
+                    {
+                        "function": "minecraft:set_components",
+                        "components": {
+                            "rarity": "uncommon",
+                            "minecraft:item_name": "{\"translate\":  \"item.tcc.mysterious_crate\",\"fallback\": \"神秘的匣子\"}"
+                        }
+                    }
+                ]
+            },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "functions": [
+              {
+                "conditions": [],
+                "function": "minecraft:set_components",
+                "components": {
+                  "rarity":"uncommon",
+                  "item_name": "{\"translate\":\"item.tcc.human_part\",\"fallback\":\"人民碎片\"}",
+                  "lore":["{\"translate\":\"item.tcc.human_part.desc\",\"fallback\":\"血淋淋的……\",\"color\":\"dark_red\",\"italic\":false}"]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:seagrass"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sea_pickle"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:kelp"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nautilus_shell"
+          }
+        ],
+        "rolls": 1.0
+      }
+    ],
+    "random_sequence": "minecraft:gameplay/fishing/treasure"
+  }

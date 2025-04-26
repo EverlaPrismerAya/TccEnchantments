@@ -57,6 +57,8 @@
       "tcc:electricity_sovereign",
       "tcc:shrinking_cylinder_sovereign",
       "tcc:shrinking_cylinder_curse",
-      "tcc:betray"
+      "tcc:betray",
+      "tcc:mine_curse",
+      "tcc:honey_hole"
     ]
   }
