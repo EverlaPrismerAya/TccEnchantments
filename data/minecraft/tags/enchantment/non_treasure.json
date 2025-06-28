@@ -22,6 +22,7 @@
       "tcc:betray",
       "tcc:stealth",
       "tcc:honey_hole",
-      "tcc:enemy_step"
+      "tcc:enemy_step",
+      "tcc:plated"
     ]
   }
