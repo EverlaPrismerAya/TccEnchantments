@@ -64,6 +64,7 @@
     "tcc:overheal",
     "tcc:vein_mining",
     "tcc:hiss",
-    "tcc:stealth"
+    "tcc:stealth",
+    "tcc:enemy_step"
   ]
 }

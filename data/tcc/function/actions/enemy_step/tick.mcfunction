@@ -1,0 +1,1 @@
+execute if entity @e[type=!#tcc:immune_to_custom_aoe_damage,distance=0.5..2.2] run function tcc:actions/enemy_step/step

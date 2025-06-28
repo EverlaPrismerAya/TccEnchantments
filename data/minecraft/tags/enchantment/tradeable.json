@@ -59,6 +59,7 @@
       "tcc:shrinking_cylinder_curse",
       "tcc:betray",
       "tcc:mine_curse",
-      "tcc:honey_hole"
+      "tcc:honey_hole",
+      "tcc:enemy_step"
     ]
   }

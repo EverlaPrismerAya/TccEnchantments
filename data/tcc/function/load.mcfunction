@@ -16,17 +16,15 @@ scoreboard objectives add stealth dummy
 scoreboard objectives add generic_lifetime dummy
 scoreboard objectives add tcc_misc dummy
 scoreboard objectives add rng dummy
+scoreboard objectives add falling_speed dummy
+scoreboard objectives add gamemode dummy
 
 #custom projectiles
 scoreboard objectives add player_uid dummy
 scoreboard players add tcc.player_uid player_uid 0
 
-scoreboard objectives add player_uid_enabled dummy
-
 scoreboard objectives add entity_uid dummy
 scoreboard players add tcc.entity_uid entity_uid 0
-
-scoreboard objectives add entity_uid_enabled dummy
 
 gamerule commandBlockOutput false
 gamerule sendCommandFeedback true

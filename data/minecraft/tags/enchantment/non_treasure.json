@@ -21,6 +21,7 @@
       "tcc:pull_request",
       "tcc:betray",
       "tcc:stealth",
-      "tcc:honey_hole"
+      "tcc:honey_hole",
+      "tcc:enemy_step"
     ]
   }

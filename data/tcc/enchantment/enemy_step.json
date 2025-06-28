@@ -1,0 +1,51 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.tcc.enemy_step",
+    "fallback":"踩踩背"
+  },
+  "effects": {
+  "minecraft:damage_protection": [
+    {
+      "effect": {
+        "type": "minecraft:add",
+        "value": {
+          "type": "minecraft:linear",
+          "base": 9.0,
+          "per_level_above_first": 1.0
+        }
+      },
+      "requirements": {
+        "condition": "minecraft:damage_source_properties",
+        "predicate": {
+          "tags": [
+            {
+              "expected": true,
+              "id": "minecraft:is_fall"
+            },
+            {
+              "expected": false,
+              "id": "minecraft:bypasses_invulnerability"
+            }
+          ]
+        }
+      }
+    }
+  ]
+  },
+  "max_cost": {
+    "base": 33,
+    "per_level_above_first": 18
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 18
+  },
+  "slots": [
+    "armor"
+  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 2,
+  "exclusive_set": "#tcc:exclusive_set/feather_falling"
+}

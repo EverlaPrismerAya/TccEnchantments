@@ -1,0 +1,1 @@
+execute as @s store result score @s falling_speed run data get entity @s Motion[1] 1000

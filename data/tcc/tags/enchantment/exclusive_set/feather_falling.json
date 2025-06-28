@@ -2,6 +2,7 @@
     "values":[
         "minecraft:feather_falling",
         "tcc:glass_falling",
-        "tcc:shock_sovereign"
+        "tcc:shock_sovereign",
+        "tcc:enemy_step"
     ]
 }

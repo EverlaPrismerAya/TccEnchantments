@@ -51,3 +51,10 @@ kill @e[type=marker,tag=tcc.entity.mine_curse_marker,scores={generic_lifetime=20
 execute as @e[type=marker,tag=tcc.entity.honey_hole_marker] at @s unless entity @e[type=fishing_bobber,distance=..2] run function tcc:actions/honey_hole/triggered
 scoreboard players add @e[type=marker,tag=tcc.entity.honey_hole_marker] generic_lifetime 1
 kill @e[type=marker,tag=tcc.entity.honey_hole_marker,scores={generic_lifetime=20..}]
+
+#generic falling speed
+execute as @a[nbt={OnGround:0b}] run function tcc:actions/generic_falling_speed/tick
+scoreboard players reset @a[nbt={OnGround:1b}] falling_speed
+
+#enemy step
+execute as @a[nbt={Inventory:[{Slot:100b,components:{"minecraft:enchantments":{levels:{"tcc:enemy_step":1}}}}]},scores={falling_speed=..-800}] at @s run function tcc:actions/enemy_step/tick
