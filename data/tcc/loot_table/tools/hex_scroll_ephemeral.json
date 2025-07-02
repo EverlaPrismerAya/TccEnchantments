@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+              {
+                "conditions": [],
+                "function": "minecraft:set_components",
+                "components": {
+                "enchantment_glint_override":true,
+                "custom_model_data":5950002,
+                "fire_resistant":{},
+                "rarity":"epic",
+                "item_name": "{\"translate\":\"item.tcc.hex_scroll_ephemeral\",\"fallback\":\"咒术卷轴·须臾\"}",
+                "lore":[
+                  "{\"translate\":\"item.tcc.hex_scroll.desc.uncharged\",\"fallback\":\"在附魔台上进行任意附魔来注能以应用于工具\",\"color\":\"gold\",\"italic\":false}",
+                  "{\"translate\":\"item.tcc.hex_scroll_ephemeral.desc\",\"fallback\":\"可用于：近战武器\",\"color\":\"blue\",\"italic\":false}"
+                  ]
+                }
+              }
+            ],
+          "name": "minecraft:book"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/diamond_block"
+}

@@ -4,6 +4,8 @@
     "minecraft:freeze",
     "minecraft:sonic_boom",
     "tcc:mirage_trident",
-    "tcc:stealth"
+    "tcc:stealth",
+    "tcc:aflame",
+    "tcc:ephemeral"
   ]
 }

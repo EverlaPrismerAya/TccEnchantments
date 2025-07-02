@@ -13,13 +13,13 @@
           "damage_type": "tcc:stealth",
           "max_damage":{
             "type":"linear",
-            "base": 8,
-            "per_level_above_first": 8
+            "base": 5,
+            "per_level_above_first": 5
           },
           "min_damage":{
             "type":"linear",
-            "base": 6,
-            "per_level_above_first": 6
+            "base": 4,
+            "per_level_above_first": 4
           }
         },
         "enchanted": "attacker",
@@ -70,6 +70,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/melee_weapons",
+  "supported_items": "#minecraft:enchantable/melee_weapon",
   "weight": 5
 }

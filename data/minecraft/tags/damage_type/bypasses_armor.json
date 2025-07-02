@@ -3,6 +3,7 @@
   "values": [
     "tcc:fragile",
     "tcc:stress",
-    "tcc:stealth"
+    "tcc:stealth",
+    "tcc:aflame"
   ]
 }

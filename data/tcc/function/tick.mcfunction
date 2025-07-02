@@ -8,8 +8,6 @@ scoreboard players set @e[scores={yamato_max_damage_count=30..}] yamato_max_dama
 execute as @e[tag=tcc.entity.sonic_blast_owner] run function tcc:actions/sonic_blast/tick
 scoreboard players remove @e[scores={sonic_blast_cooldown=1..}] sonic_blast_cooldown 1
 scoreboard players add @e sonic_blast_cooldown 0
-execute as @a[scores={sonic_blast_cooldown=1}] run title @s actionbar [{"text":" "}]
-execute as @a[scores={sonic_blast_cooldown=2..20}] run title @s actionbar [{"translate":"enchantments.tcc.sonic_blast.cooldown.prefix","fallback":"还有"},{"score":{"objective":"sonic_blast_cooldown","name":"@s"}},{"translate":"enchantments.tcc.sonic_blast.cooldown.suffix","fallback":"刻冷却完毕"}]
 execute as @e[scores={sonic_blast_max_range=61..}] run scoreboard players reset @s sonic_blast_max_range
 execute as @e[scores={sonic_blast_max_range=1..}] run scoreboard players add @s sonic_blast_max_range 1
 
@@ -52,9 +50,11 @@ execute as @e[type=marker,tag=tcc.entity.honey_hole_marker] at @s unless entity 
 scoreboard players add @e[type=marker,tag=tcc.entity.honey_hole_marker] generic_lifetime 1
 kill @e[type=marker,tag=tcc.entity.honey_hole_marker,scores={generic_lifetime=20..}]
 
-#generic falling speed
-execute as @a[nbt={OnGround:0b}] run function tcc:actions/generic_falling_speed/tick
-scoreboard players reset @a[nbt={OnGround:1b}] falling_speed
+#aflame
+execute as @e[scores={aflame=1..}] at @s run function tcc:actions/hexes/aflame/victim_tick
 
-#enemy step
-execute as @a[nbt={Inventory:[{Slot:100b,components:{"minecraft:enchantments":{levels:{"tcc:enemy_step":1}}}}]},scores={falling_speed=..-800}] at @s run function tcc:actions/enemy_step/tick
+#player tick
+execute as @a run function tcc:player_tick
+
+#hellbound
+execute if entity @e[type=vex,tag=tcc.entity.hellbound_vex] run function tcc:actions/hexes/hellbound/tick

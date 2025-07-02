@@ -1,0 +1,69 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.hex_hellbound",
+    "fallback": "§6§l咒术炼注·狱使"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:actions/hexes/hellbound/apply"
+        },
+        "enchanted": "attacker",
+        "requirements": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "direct_attacker",
+            "predicate": {
+              "type": "#minecraft:arrows"
+            }
+          },
+          {
+            "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.45,
+              "per_level_above_first": 0.0
+              }
+            },
+            "condition": "minecraft:random_chance"
+          }
+        ]
+      },
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:actions/hexes/hellbound/owner"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "direct_attacker",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/hexes",
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/arrowed_weapon",
+  "weight": 5
+}

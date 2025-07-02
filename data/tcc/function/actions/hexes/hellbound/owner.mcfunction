@@ -1,0 +1,2 @@
+execute as @e[type=vex,tag=tcc.entity.hellbound_vex,tag=!tcc.entity.summoned] run data modify entity @s Owner set from entity @p UUID
+execute as @e[type=vex,tag=tcc.entity.hellbound_vex,tag=!tcc.entity.summoned] run tag @s add tcc.entity.summoned

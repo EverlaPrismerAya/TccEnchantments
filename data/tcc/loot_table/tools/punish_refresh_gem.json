@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+              {
+                "conditions": [],
+                "function": "minecraft:set_components",
+                "components": {
+                  "enchantment_glint_override":true,
+                  "custom_model_data":12700014,
+                  "fire_resistant":{},
+                  "rarity":"epic",
+                  "item_name": "{\"translate\":\"item.tcc.punish_refresh_gem\",\"fallback\":\"惩罚刷新宝石\"}",
+                  "lore":[
+                    "{\"translate\":\"item.tcc.punish_refresh_gem.desc.1\",\"fallback\":\"副手手持本物品，主手手持要刷新的物品\",\"color\":\"aqua\",\"italic\":false}",
+                    "{\"translate\":\"item.tcc.punish_refresh_gem.desc.2\",\"fallback\":\"长按右键即可刷新\",\"color\":\"aqua\",\"italic\":false}"
+                  ],
+                  "food":{
+                  "eat_seconds":1.0,
+                  "saturation":0.0,
+                  "effects":[],
+                  "nutrition":0,
+                  "can_always_eat":true
+                  }
+                }
+              }
+            ],
+          "name": "minecraft:diamond"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/diamond_block"
+}

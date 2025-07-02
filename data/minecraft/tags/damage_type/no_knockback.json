@@ -1,6 +1,7 @@
 {   
     "values": [
         "tcc:fragile",
-        "tcc:stress"
+        "tcc:stress",
+        "tcc:aflame"
     ]
 }

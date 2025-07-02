@@ -1,0 +1,1 @@
+scoreboard players remove @s[scores={ephemeral_stamina=1..}] ephemeral_stamina 60

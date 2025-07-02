@@ -1,0 +1,5 @@
+tag @s[tag=!tcc.entity.hellbound_vex] add tcc.entity.targeted_by_hellbound
+summon vex ~ ~ ~ {Tags:["tcc.entity.hellbound_vex"],body_armor_drop_chance:0.0f,HandDropChances:[0.0f,0.0f],HandItems:[{"id":"netherite_sword",count:1},{"id":"netherite_sword",count:1}],attributes:[{base:24.0,id:"generic.max_health"},{base:999.9,id:"generic.knockback_resistance"}],Health:50.0f}
+summon vex ~ ~ ~ {Tags:["tcc.entity.hellbound_vex"],body_armor_drop_chance:0.0f,HandDropChances:[0.0f,0.0f],HandItems:[{"id":"netherite_sword",count:1},{"id":"netherite_sword",count:1}],attributes:[{base:24.0,id:"generic.max_health"},{base:999.9,id:"generic.knockback_resistance"}],Health:50.0f}
+execute as @e[type=vex,tag=tcc.entity.hellbound_vex] at @s run damage @s 0 generic by @e[tag=!tcc.entity.hellbound_vex,tag=tcc.entity.targeted_by_hellbound,limit=1,sort=nearest]
+tag @s remove tcc.entity.targeted_by_hellbound

@@ -1,0 +1,47 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.hex_aflame",
+    "fallback": "§6§l咒术炼注·魔焱"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:actions/hexes/aflame/apply"
+        },
+        "enchanted": "attacker"
+      }
+    ],
+    "minecraft:tick":[
+      {
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:actions/hexes/aflame/user_tick"
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {}
+				}
+			}
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/hexes",
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/any_weapon",
+  "weight": 5
+}

@@ -1,0 +1,2 @@
+scoreboard players add @e[tag=tcc.entity.hellbound_vex] hellbound_vex_lifetime 1
+execute as @e[type=vex,tag=tcc.entity.hellbound_vex,scores={hellbound_vex_lifetime=200..}] at @s run function tcc:actions/hexes/hellbound/vanish

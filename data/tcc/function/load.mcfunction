@@ -10,7 +10,19 @@ scoreboard objectives add sonic_blast_cooldown dummy
 scoreboard objectives add stress_effect dummy
 scoreboard objectives add stress_reset deathCount
 
+#stealth
 scoreboard objectives add stealth dummy
+
+#aflame
+scoreboard objectives add aflame dummy
+scoreboard objectives add weak_aflame dummy
+scoreboard objectives add aflame_inv_frame dummy
+
+#ephemeral
+scoreboard objectives add ephemeral_stamina dummy
+
+#hellbound
+scoreboard objectives add hellbound_vex_lifetime dummy
 
 #generics
 scoreboard objectives add generic_lifetime dummy

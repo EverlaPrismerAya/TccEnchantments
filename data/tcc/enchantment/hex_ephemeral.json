@@ -1,0 +1,149 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.tcc.hex_ephemeral",
+    "fallback": "§6§l咒术炼注·须臾"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "tcc:ephemeral",
+          "max_damage":{
+            "type":"linear",
+            "base": 16,
+            "per_level_above_first": 0
+          },
+          "min_damage":{
+            "type":"linear",
+            "base": 12,
+            "per_level_above_first": 0
+          }
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition":"minecraft:entity_scores",
+          "entity":"attacker",
+          "scores":{
+            "ephemeral_stamina":{
+              "min": 240,
+              "max": 2147483647
+            }
+          }
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "tcc:ephemeral",
+          "max_damage":{
+            "type":"linear",
+            "base": 10,
+            "per_level_above_first": 0
+          },
+          "min_damage":{
+            "type":"linear",
+            "base": 5,
+            "per_level_above_first": 0
+          }
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition":"minecraft:entity_scores",
+          "entity":"attacker",
+          "scores":{
+            "ephemeral_stamina":{
+              "min": 180,
+              "max": 239
+            }
+          }
+        }
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "tcc:ephemeral",
+          "max_damage":{
+            "type":"linear",
+            "base": 7,
+            "per_level_above_first": 0
+          },
+          "min_damage":{
+            "type":"linear",
+            "base": 3,
+            "per_level_above_first": 0
+          }
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition":"minecraft:entity_scores",
+          "entity":"attacker",
+          "scores":{
+            "ephemeral_stamina":{
+              "min": 130,
+              "max": 179
+            }
+          }
+        }
+      },
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:actions/hexes/ephemeral/apply_weakness"
+        },
+        "enchanted": "attacker",
+        "requirements": {
+          "condition":"minecraft:entity_scores",
+          "entity":"attacker",
+          "scores":{
+            "ephemeral_stamina":{
+              "min": -2147483648,
+              "max": 90
+            }
+          }
+        }
+      },
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "tcc:actions/hexes/ephemeral/decrease_stamina"
+        },
+        "enchanted": "attacker"
+      }
+    ],
+    "minecraft:tick":[
+      {
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:actions/hexes/ephemeral/tick"
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {}
+				}
+			}
+    ]
+  },
+  "exclusive_set": "#tcc:exclusive_set/hexes",
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#minecraft:enchantable/melee_weapon",
+  "weight": 5
+}

@@ -45,6 +45,6 @@
   "slots": [
     "mainhand"
   ],
-  "supported_items": "#minecraft:enchantable/melee_weapons",
+  "supported_items": "#minecraft:enchantable/melee_weapon",
   "weight": 2
 }
