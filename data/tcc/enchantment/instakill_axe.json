@@ -35,6 +35,25 @@
             "type": "minecraft:damage_item",
             "amount": 32767
           }
+        },
+        {
+          "enchanted": "attacker",
+          "affected": "victim",
+          "effect": {
+            "type":"play_sound",
+            "sound":{
+              "sound_id": "tcc:enchantment.instakill_axe.kill",
+              "range": 16
+            },
+            "pitch":{
+              "type":"constant",
+              "value": 1.0
+            },
+            "volume":{
+              "type":"constant",
+              "value": 1.0
+            }
+          }
         }
       ]
     },

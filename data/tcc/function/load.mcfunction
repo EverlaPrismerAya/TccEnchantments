@@ -24,12 +24,16 @@ scoreboard objectives add ephemeral_stamina dummy
 #hellbound
 scoreboard objectives add hellbound_vex_lifetime dummy
 
+#enemy step
+scoreboard objectives add enemy_step dummy
+
 #generics
 scoreboard objectives add generic_lifetime dummy
 scoreboard objectives add tcc_misc dummy
 scoreboard objectives add rng dummy
 scoreboard objectives add falling_speed dummy
 scoreboard objectives add gamemode dummy
+scoreboard objectives add tcc_hp health
 
 #custom projectiles
 scoreboard objectives add player_uid dummy

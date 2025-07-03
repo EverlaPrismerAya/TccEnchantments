@@ -16,13 +16,26 @@
           "id": "enchantment.guilty_of_fortane",
           "operation": "add_value"
         }
-      ]
+      ],
+      "minecraft:tick":[
+      {
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "tcc:actions/guilty_of_fortane/melt"
+				},
+				"requirements": {
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {}
+				}
+			}
+    ]
     },
     "max_cost": {
       "base": 40,
       "per_level_above_first": 10
     },
-    "max_level": 3,
+    "max_level": 1,
     "min_cost": {
       "base": 10,
       "per_level_above_first": 10

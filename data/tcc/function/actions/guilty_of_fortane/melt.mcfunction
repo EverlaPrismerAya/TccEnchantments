@@ -1,0 +1,1 @@
+execute if block ~ ~1 ~ minecraft:water if entity @s[gamemode=!creative] if entity @s[gamemode=!spectator] if score @s tcc_hp matches 1.. run function tcc:actions/guilty_of_fortane/melt_water
