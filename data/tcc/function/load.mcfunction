@@ -30,7 +30,6 @@ scoreboard objectives add enemy_step dummy
 #generics
 scoreboard objectives add generic_lifetime dummy
 scoreboard objectives add tcc_misc dummy
-scoreboard objectives add rng dummy
 scoreboard objectives add falling_speed dummy
 scoreboard objectives add gamemode dummy
 scoreboard objectives add tcc_hp health
