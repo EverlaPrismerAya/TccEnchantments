@@ -1,6 +1,7 @@
 # invulnerable frames
 scoreboard objectives add yamato_max_damage_count dummy
 scoreboard objectives add amd_inv_frame dummy
+scoreboard objectives add aflame_inv_frame dummy
 
 #sonic blast
 scoreboard objectives add sonic_blast_max_range dummy
@@ -16,7 +17,6 @@ scoreboard objectives add stealth dummy
 #aflame
 scoreboard objectives add aflame dummy
 scoreboard objectives add weak_aflame dummy
-scoreboard objectives add aflame_inv_frame dummy
 
 #ephemeral
 scoreboard objectives add ephemeral_stamina dummy
@@ -35,11 +35,8 @@ scoreboard objectives add gamemode dummy
 scoreboard objectives add tcc_hp health
 
 #custom projectiles
-scoreboard objectives add player_uid dummy
-scoreboard players add tcc.player_uid player_uid 0
-
-scoreboard objectives add entity_uid dummy
-scoreboard players add tcc.entity_uid entity_uid 0
+scoreboard objectives add tcc_uid dummy
+scoreboard players add tcc_uid_counter tcc_uid 0
 
 gamerule commandBlockOutput false
 gamerule sendCommandFeedback true
