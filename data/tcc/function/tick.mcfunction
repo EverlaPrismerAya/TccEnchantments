@@ -58,3 +58,5 @@ execute as @a run function tcc:player_tick
 
 #hellbound
 execute if entity @e[type=vex,tag=tcc.entity.hellbound_vex] run function tcc:actions/hexes/hellbound/tick
+
+execute as @e[type=witch] at @s if block ~ ~ ~ soul_campfire if block ~ ~1 ~ powder_snow run damage @s 1 tcc:aflame
